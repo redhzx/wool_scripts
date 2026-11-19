@@ -1,5 +1,5 @@
 #!name=广告拦截&净化合集
-#!desc=(支持约730款APP/小程序)针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！规则明细可以查看本插件的注释
+#!desc=针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！规则明细可以查看本插件的注释
 #!author=奶思[https://github.com/fmz200]
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AdblockPlus.png
 #!homepage=https://github.com/fmz200/wool_scripts
@@ -58,40 +58,10 @@ tcbc_enable = switch,true,false,tag=淘宝-脚本开关
 xhs_enable = switch,true,false,tag=小红书-脚本开关
 yzku_enable = switch,true,false,tag=优酷-脚本开关
 youtube_enable = switch,true,false,tag=YouTube-脚本开关
-vsgogojihhks_enable = switch,true,false,tag=中国国际航空-脚本开关
 vrvr_enable = switch,true,false,tag=转转-脚本开关
 
 
 [Rule]
-# >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
-
-
-# >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
-
-# > 12123
-# hostname = gab.122.gov.cn
-DOMAIN-SUFFIX, v3.fstats.xyz, REJECT
-DOMAIN-SUFFIX, wss.haoyundmn.com, REJECT
-DOMAIN-SUFFIX, new.xiongzhangad.com, REJECT
-DOMAIN-SUFFIX, alexametrics.com, REJECT
-DOMAIN-KEYWORD, in-page-push, REJECT
-
-
-# >>>>>>>>>>>>>>> ✅ 2 ✅ <<<<<<<<<<<<<<
-
-# > 2345网址导航
-DOMAIN-SUFFIX, dl.2345.com, REJECT
-DOMAIN-SUFFIX, download.2345.com, REJECT
-DOMAIN-SUFFIX, ggcode.2345.com, REJECT
-DOMAIN-SUFFIX, houtai.2345.com, REJECT
-DOMAIN-SUFFIX, jifen.2345.com, REJECT
-DOMAIN-SUFFIX, minipage.2345.com, REJECT
-DOMAIN-SUFFIX, wan.2345.com, REJECT
-DOMAIN-SUFFIX, zhushou.2345.com, REJECT
-DOMAIN-SUFFIX, tg.jifen.2345.com, REJECT
-DOMAIN-SUFFIX, update.minipage.2345.com, REJECT
-DOMAIN-SUFFIX, g.wan.2345.com, REJECT
-
 
 # > 阿里系
 # DOMAIN-SUFFIX, alistatic.cn, REJECT
@@ -446,13 +416,6 @@ DOMAIN-SUFFIX, bat.bing.com, REJECT
 DOMAIN-SUFFIX, c.bing.com, REJECT
 
 
-# > 财新网
-# hostname = gg.caixin.com
-DOMAIN-SUFFIX, apollo.caixin.com, REJECT
-DOMAIN-SUFFIX, logstat.caixin.com, REJECT
-DOMAIN-SUFFIX, promote.caixin.com, REJECT
-
-
 # > C&J Marketing
 # https://www.zhihu.com/question/46746200, REJECT
 # 苏州思杰马克丁软件有限公司, REJECT
@@ -496,7 +459,6 @@ DOMAIN-KEYWORD,p3.pstatp.com, REJECT
 # hostname = api.douban.com
 DOMAIN-SUFFIX, erebor.douban.com, REJECT
 DOMAIN-SUFFIX, ad.doubanio.com, REJECT
-
 
 # > 饿了么
 # hostname = elemecdn.com, fuss10.elemecdn.com, cube.elemecdn.com, www1.elecfans.com, nr-op.elemecdn.com
@@ -979,17 +941,11 @@ DOMAIN, t-ads.xiaohongshu.com, REJECT
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 
 
-
-
-
 # > 雪球
 # hostname = api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com, 39.103.79.14, 39.106.97.84, 47.95.49.75, 101.201.62.20, 101.201.62.26, 101.201.175.228, 124.250.48.3, 182.92.145.50, 182.92.251.113
 DOMAIN-SUFFIX, ad.xueqiu.com, REJECT
 # 可以去掉倒计时，但是误杀很多图片，默认关闭, REJECT
 # DOMAIN-KEYWORD, xqimg.imedao.com, REJECT
-
-
-
 
 # > 优酷
 # hostname = acs.youku.com, push.m.youku.com, un-acs.youku.com
@@ -1059,8 +1015,6 @@ DOMAIN-SUFFIX, test.ott.youku.com, REJECT
 # DOMAIN-SUFFIX, ykatr.youku.com, REJECT
 # DOMAIN-SUFFIX, ykrec.youku.com, REJECT
 
-
-
 # > 云闪付
 DOMAIN, ads.95516.com, REJECT
 DOMAIN, cm-10-138.getui.com, REJECT
@@ -1078,7 +1032,6 @@ IP-CIDR, 120.240.95.37/32, REJECT, no-resolve
 # > 中国移动云盘
 # hostname = mcmm.caiyun.feixin.10086.cn, mrp.mcloud.139.com, ad.mcloud.139.com, middle.yun.139.com
 DOMAIN, ad.mcloud.139.com, REJECT
-
 
 # > 中信银行
 # hostname = wap.bank.ecitic.com, imcs.citicbank.com
@@ -1144,607 +1097,8 @@ DOMAIN-KEYWORD, umeng, REJECT
 DOMAIN-SUFFIX, 1a-1791.com, REJECT
 DOMAIN-SUFFIX, rumble.com, REJECT
 
-
-# Ad-Stir, REJECT
-DOMAIN-SUFFIX, ad-stir.com , REJECT
-
-# Adadapted, REJECT
-DOMAIN-SUFFIX, adadapted.com , REJECT
-DOMAIN-SUFFIX, ads.adadapted.com , REJECT
-
-# AdChina, REJECT
-DOMAIN-SUFFIX, adchina.com , REJECT
-DOMAIN-SUFFIX, adchina.io , REJECT
-
-# AddThis, REJECT
-DOMAIN-SUFFIX, addthis.com , REJECT
-DOMAIN-SUFFIX, addthisedge.com , REJECT
-
-# Adform, REJECT
-DOMAIN-KEYWORD, adform , REJECT
-
-# Adhouyi (广告后台), REJECT
-DOMAIN-SUFFIX, ad.adhouyi.cn , REJECT
-DOMAIN-SUFFIX, adhouyi.com , REJECT
-
-# Adinall, REJECT
-DOMAIN-SUFFIX, adinall.com , REJECT
-
-# Adition, REJECT
-DOMAIN-SUFFIX, ad8.adfarm1.adition.com , REJECT
-DOMAIN-SUFFIX, dsp.adfarm1.adition.com , REJECT
-
-# Adjust, REJECT
-DOMAIN-SUFFIX, adjust.io , REJECT
-
-# Admarvel, REJECT
-DOMAIN-SUFFIX, admarvel.com, REJECT
-
-# AdRoll, REJECT
-DOMAIN-SUFFIX, adroll.com , REJECT
-
-# Adtaily, REJECT
-DOMAIN-SUFFIX, adtaily.com , REJECT
-
-# Adups, REJECT
-DOMAIN-SUFFIX, fota4.adups.cn , REJECT
-DOMAIN-SUFFIX, adups.com , REJECT
-
-# Adview, REJECT
-DOMAIN-SUFFIX, adview.cn , REJECT
-
-# Adwo, REJECT
-DOMAIN-SUFFIX, adwo.com , REJECT
-
-# Adzerk, REJECT
-DOMAIN-SUFFIX, adzerk.net , REJECT
-
-# Ad-m.asia, REJECT
-DOMAIN-SUFFIX, sync-dsp.ad-m.asia, REJECT
-
-# AdColony, REJECT
-DOMAIN-SUFFIX, adcolony.com, REJECT
-
-# AerServ, REJECT
-DOMAIN-SUFFIX, aerserv.com , REJECT
-
-# Airpush, REJECT
-DOMAIN-SUFFIX, airpush.com, REJECT
-
-# App-Adforce, REJECT
-DOMAIN-SUFFIX, app-adforce.jp, REJECT
-
-# Appadhoc, REJECT
-DOMAIN-SUFFIX, appadhoc.com, REJECT
-DOMAIN-SUFFIX, sdk.appadhoc.com, REJECT
-
-# AppsFlyer, REJECT
-DOMAIN-SUFFIX, appsflyer.com, REJECT
-
-# Appdriver, REJECT
-DOMAIN-SUFFIX, appdriver.cn, REJECT
-DOMAIN-SUFFIX, appdriver.com.cn, REJECT
-
-# Cacafly, REJECT
-DOMAIN-SUFFIX, ad.cacafly.com, REJECT
-DOMAIN-SUFFIX, cacafly.net, REJECT
-
-# Casale Media, REJECT
-DOMAIN-SUFFIX, casalemedia.com, REJECT
-DOMAIN-SUFFIX, as.casalemedia.com, REJECT
-DOMAIN-SUFFIX, ssum.casalemedia.com, REJECT
-
-# Chartboost, REJECT
-DOMAIN-SUFFIX, chartboost.com, REJECT
-
-# Clicki, REJECT
-DOMAIN-SUFFIX, clicki.cn, REJECT
-
-# CNZZ, REJECT
-DOMAIN-SUFFIX, cnzz.com, REJECT
-DOMAIN-SUFFIX, s96.cnzz.com, REJECT
-
-# Criteo, REJECT
-DOMAIN-SUFFIX, criteo.com, REJECT
-DOMAIN-SUFFIX, criteo.net, REJECT
-DOMAIN-SUFFIX, dis.crieto.com, REJECT
-DOMAIN-SUFFIX, cas.criteo.com, REJECT
-DOMAIN-SUFFIX, dis.criteo.com, REJECT
-DOMAIN-SUFFIX, gum.criteo.com, REJECT
-DOMAIN-SUFFIX, rtax.criteo.com, REJECT
-DOMAIN-SUFFIX, widget.criteo.com, REJECT
-DOMAIN-SUFFIX, dis.us.criteo.com, REJECT
-
-# comScore, REJECT
-DOMAIN-SUFFIX, scorecardresearch.com, REJECT
-DOMAIN-SUFFIX, b.scorecardresearch.com, REJECT
-DOMAIN-SUFFIX, sb.scorecardresearch.com, REJECT
-DOMAIN-SUFFIX, udm.scorecardresearch.com, REJECT
-
-# Dianjoy, REJECT
-DOMAIN-SUFFIX, dianjoy.com, REJECT
-DOMAIN-SUFFIX, a.dianjoy.com, REJECT
-DOMAIN-SUFFIX, fast-cdn.dianjoy.com, REJECT
-
-# Dianru, REJECT
-DOMAIN-SUFFIX, dianru.com, REJECT
-DOMAIN-SUFFIX, api.dianru.com, REJECT
-DOMAIN-SUFFIX, api.android.dianru.com, REJECT
-
-# dtscout, REJECT
-DOMAIN-KEYWORD, dtscout, REJECT
-DOMAIN-SUFFIX, dtscout.com, REJECT
-
-# Exoclick, REJECT
-DOMAIN-SUFFIX, main.exoclick.com, REJECT
-DOMAIN-SUFFIX, syndication.exoclick.com, REJECT
-
-# Exosrv, REJECT
-DOMAIN-SUFFIX, exosrv.com, REJECT
-DOMAIN-SUFFIX, ads.exosrv.com, REJECT
-
-# Flurry, REJECT
-DOMAIN-SUFFIX, flurry.com, REJECT
-DOMAIN-SUFFIX, ad.flurry.com, REJECT
-DOMAIN-SUFFIX, adlog.flurry.com, REJECT
-DOMAIN-SUFFIX, proton.flurry.com, REJECT
-DOMAIN-SUFFIX, flurry.cachefly.net, REJECT
-
-# Guomob (果盟), REJECT
-DOMAIN-SUFFIX, guomob.com, REJECT
-
-# GrowingIO, REJECT
-DOMAIN-SUFFIX, giocdn.com, REJECT
-DOMAIN-SUFFIX, growingio.com, REJECT
-DOMAIN-SUFFIX, api.growingio.com, REJECT
-DOMAIN-SUFFIX, apihk.growingio.com, REJECT
-DOMAIN-SUFFIX, crashapi.growingio.com, REJECT
-DOMAIN-SUFFIX, t.growingio.com, REJECT
-DOMAIN-SUFFIX, tags.growingio.com, REJECT
-
-# iClick, REJECT
-DOMAIN-SUFFIX, mfan.iclick.com.cn, REJECT
-
-# Innity, REJECT
-DOMAIN-SUFFIX, innity.com, REJECT
-DOMAIN-SUFFIX, avn.innity.com, REJECT
-DOMAIN-SUFFIX, cast.innity.com, REJECT
-DOMAIN-SUFFIX, innity.net, REJECT
-DOMAIN-SUFFIX, cdn.innity.net, REJECT
-DOMAIN-SUFFIX, cdn.media.innity.net, REJECT
-DOMAIN-SUFFIX, ssl-cdn.media.innity.net, REJECT
-
-# Inveno, REJECT
-DOMAIN-SUFFIX, business.inveno.com, REJECT
-DOMAIN-SUFFIX, malacca.inveno.com, REJECT
-DOMAIN-SUFFIX, zuimeitianqi.inveno.com, REJECT
-
-# InMobi, REJECT
-DOMAIN-SUFFIX, inmobi.cn, REJECT
-DOMAIN-SUFFIX, inmobicdn.cn, REJECT
-DOMAIN-SUFFIX, inmobi.com, REJECT
-DOMAIN-SUFFIX, inmobi.net, REJECT
-DOMAIN-SUFFIX, inmobicdn.net, REJECT
-
-# IronSource, REJECT
-DOMAIN-SUFFIX, ironsrc.com, REJECT
-DOMAIN-SUFFIX, supersonic.com, REJECT
-DOMAIN-SUFFIX, supersonicads.com, REJECT
-
-# iPinYou (品友互动), REJECT
-DOMAIN-SUFFIX, ipinyou.com, REJECT
-
-# Jesgoo, REJECT
-DOMAIN-SUFFIX, jesgoo.com, REJECT
-DOMAIN-SUFFIX, cdn.jesgoo.com, REJECT
-DOMAIN-SUFFIX, rcv.jesgoo.com, REJECT
-
-# JuicyAds, REJECT
-DOMAIN-SUFFIX, juicyads.com, REJECT
-DOMAIN-SUFFIX, juicyads.in, REJECT
-DOMAIN-SUFFIX, adserver.juicyads.com, REJECT
-DOMAIN-SUFFIX, img.jizzads.com, REJECT
-
-# Kejet, REJECT
-DOMAIN-SUFFIX, kejet.com, REJECT
-DOMAIN-SUFFIX, as.kejet.com, REJECT
-DOMAIN-SUFFIX, code.kejet.com, REJECT
-DOMAIN-SUFFIX, dmacore.kejet.com, REJECT
-DOMAIN-SUFFIX, kejet.net, REJECT
-DOMAIN-SUFFIX, as.kejet.net, REJECT
-DOMAIN-SUFFIX, aw.kejet.net, REJECT
-DOMAIN-SUFFIX, ck.kejet.net, REJECT
-DOMAIN-SUFFIX, cmarket.kejet.net, REJECT
-DOMAIN-SUFFIX, dmacore.kejet.net, REJECT
-DOMAIN-SUFFIX, dmp.kejet.net, REJECT
-DOMAIN-SUFFIX, ec.kejet.net, REJECT
-DOMAIN-SUFFIX, hzdmacore.kejet.net, REJECT
-DOMAIN-SUFFIX, m.kejet.net, REJECT
-DOMAIN-SUFFIX, rtb-p.kejet.net, REJECT
-
-# Keyrun, REJECT
-DOMAIN-SUFFIX, keyrun.cn, REJECT
-DOMAIN-SUFFIX, c1.keyrun.cn, REJECT
-DOMAIN-SUFFIX, keyrun.com, REJECT
-
-# Kissmetrics, REJECT
-DOMAIN-SUFFIX, kissmetrics.com, REJECT
-
-# Krux, REJECT
-DOMAIN-SUFFIX, krux.net, REJECT
-
-# 酷云互动, REJECT
-DOMAIN-SUFFIX, config.kuyun.com, REJECT
-DOMAIN-SUFFIX, logonext.tv.kuyun.com, REJECT
-
-# Kochava, REJECT
-DOMAIN-SUFFIX, kochava.com, REJECT
-
-# Leadbolt, REJECT
-DOMAIN-SUFFIX, leadbolt.net, REJECT
-DOMAIN-SUFFIX, ad.leadbolt.net, REJECT
-DOMAIN-SUFFIX, api.leadbolt.net, REJECT
-DOMAIN-SUFFIX, leadboltads.net, REJECT
-DOMAIN-SUFFIX, ad.leadboltads.net, REJECT
-DOMAIN-SUFFIX, leadboltapps.net, REJECT
-DOMAIN-SUFFIX, ad.leadboltapps.net, REJECT
-DOMAIN-SUFFIX, leadboltmobile.net, REJECT
-DOMAIN-SUFFIX, ad.leadboltmobile.net, REJECT
-
-# Localytics, REJECT
-DOMAIN-SUFFIX, localytics.com, REJECT
-
-# 亿动广告传媒, REJECT
-DOMAIN-SUFFIX, madserving.com, REJECT
-DOMAIN-SUFFIX, ad.madserving.com, REJECT
-DOMAIN-SUFFIX, adv.madserving.com, REJECT
-DOMAIN-SUFFIX, appsrv1.madserving.com, REJECT
-DOMAIN-SUFFIX, appsrv4.madserving.com, REJECT
-DOMAIN-SUFFIX, clk.madserving.com, REJECT
-DOMAIN-SUFFIX, imp.madserving.com, REJECT
-DOMAIN-SUFFIX, clk.pdb.madserving.com, REJECT
-DOMAIN-SUFFIX, imp.pdb.madserving.com, REJECT
-DOMAIN-SUFFIX, madhouse.cn, REJECT
-
-# Marketgid, REJECT
-DOMAIN-SUFFIX, marketgid.com, REJECT
-DOMAIN-SUFFIX, ag-gb.marketgid.com, REJECT
-DOMAIN-SUFFIX, cdn.marketgid.com, REJECT
-DOMAIN-SUFFIX, counter.marketgid.com, REJECT
-DOMAIN-SUFFIX, imgg.marketgid.com, REJECT
-DOMAIN-SUFFIX, jsc.marketgid.com, REJECT
-DOMAIN-SUFFIX, wsp.marketgid.com, REJECT
-
-# 聚胜万合, REJECT
-DOMAIN-SUFFIX, mediav.com, REJECT
-
-# MGID, REJECT
-DOMAIN-SUFFIX, mgid.com, REJECT
-DOMAIN-SUFFIX, aa-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, ab-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, ac-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, ad-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, ae-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, aj-gb.mgid.com, REJECT
-DOMAIN-SUFFIX, imgg.mgid.com, REJECT
-DOMAIN-SUFFIX, jsc.mgid.com, REJECT
-DOMAIN-SUFFIX, usr.mgid.com, REJECT
-DOMAIN-SUFFIX, aa.goodsblock.mgid.com, REJECT
-DOMAIN-SUFFIX, ab.goodsblock.mgid.com, REJECT
-
-# Millennial Media, REJECT
-DOMAIN-SUFFIX, millennialmedia.com, REJECT
-DOMAIN-SUFFIX, cdn.millennialmedia.com, REJECT
-DOMAIN-SUFFIX, images.millennialmedia.com, REJECT
-
-# Mixpanel, REJECT
-DOMAIN-SUFFIX, mxpnl.com, REJECT
-
-# Moat, REJECT
-DOMAIN-SUFFIX, moatads.com, REJECT
-DOMAIN-SUFFIX, geo.moatads.com, REJECT
-DOMAIN-SUFFIX, js.moatads.com, REJECT
-DOMAIN-SUFFIX, px.moatads.com, REJECT
-DOMAIN-SUFFIX, z.moatads.com, REJECT
-
-# 创智汇聚, REJECT
-DOMAIN-SUFFIX, cca.mob.com, REJECT
-DOMAIN-SUFFIX, api.cmt.mob.com, REJECT
-DOMAIN-SUFFIX, c.data.mob.com, REJECT
-DOMAIN-SUFFIX, devs.data.mob.com, REJECT
-DOMAIN-SUFFIX, m.data.mob.com, REJECT
-DOMAIN-SUFFIX, api.exc.mob.com, REJECT
-DOMAIN-SUFFIX, api.share.mob.com, REJECT
-
-# Mobfox, REJECT
-DOMAIN-SUFFIX, mobfox.com, REJECT
-DOMAIN-SUFFIX, my.mobfox.com, REJECT
-
-# 魔窗, REJECT
-DOMAIN-SUFFIX, magicwindow.cn, REJECT
-
-# Mathtag, REJECT
-DOMAIN-KEYWORD, mathtag, REJECT
-DOMAIN-SUFFIX, mathtag.com, REJECT
-DOMAIN-SUFFIX, pixel.mathtag.com, REJECT
-DOMAIN-SUFFIX, sync.mathtag.com, REJECT
-
-# 艾德思奇（adSage）, REJECT
-DOMAIN-SUFFIX, mobisage.cn, REJECT
-DOMAIN-SUFFIX, config.mobisage.cn, REJECT
-
-# MoPub（Twitter 公司旗下的移动广告服务平台）, REJECT
-DOMAIN-SUFFIX, mopub.com, REJECT
-
-# NetworkBench (听云), REJECT
-DOMAIN-SUFFIX, networkbench.com, REJECT
-
-# NicoNico, REJECT
-DOMAIN, ads.nicovideo.jp, REJECT
-
-# Onetad, REJECT
-DOMAIN-SUFFIX, onetad.com, REJECT
-DOMAIN-SUFFIX, code11.onetad.com, REJECT
-DOMAIN-SUFFIX, code12.onetad.com, REJECT
-DOMAIN-SUFFIX, pic1.onetad.com, REJECT
-DOMAIN-SUFFIX, pic2.onetad.com, REJECT
-DOMAIN-SUFFIX, pic3.onetad.com, REJECT
-DOMAIN-SUFFIX, pic8.onetad.com, REJECT
-DOMAIN-SUFFIX, ww10.onetad.com, REJECT
-DOMAIN-SUFFIX, ww101.onetad.com, REJECT
-DOMAIN-SUFFIX, ww11.onetad.com, REJECT
-DOMAIN-SUFFIX, ww12.onetad.com, REJECT
-DOMAIN-SUFFIX, ww13.onetad.com, REJECT
-DOMAIN-SUFFIX, ww202.onetad.com, REJECT
-DOMAIN-SUFFIX, ww34.onetad.com, REJECT
-DOMAIN-SUFFIX, ww346.onetad.com, REJECT
-DOMAIN-SUFFIX, ww360.onetad.com, REJECT
-DOMAIN-SUFFIX, ww363.onetad.com, REJECT
-DOMAIN-SUFFIX, ww366.onetad.com, REJECT
-DOMAIN-SUFFIX, ww78.onetad.com, REJECT
-DOMAIN-SUFFIX, ww8.onetad.com, REJECT
-DOMAIN-SUFFIX, ww9.onetad.com, REJECT
-DOMAIN-SUFFIX, wwv.onetad.com, REJECT
-
-# OpenX, REJECT
-DOMAIN-SUFFIX, openx.net, REJECT
-
-# Optimizely, REJECT
-DOMAIN-SUFFIX, optimizelyapis.com, REJECT
-
-# Oracle, REJECT
-DOMAIN-SUFFIX, bluekai.com, REJECT
-
-# Pagechoice, REJECT
-DOMAIN-SUFFIX, pagechoice.com, REJECT
-DOMAIN-SUFFIX, pagechoice.net, REJECT
-DOMAIN-SUFFIX, col.pagechoice.net, REJECT
-DOMAIN-SUFFIX, dap.pagechoice.net, REJECT
-DOMAIN-SUFFIX, images.pagechoice.net, REJECT
-DOMAIN-SUFFIX, motu.pagechoice.net, REJECT
-DOMAIN-SUFFIX, sit.pagechoice.net, REJECT
-
-# Plista, REJECT
-DOMAIN-SUFFIX, plista.com, REJECT
-DOMAIN-SUFFIX, click-cn.plista.com, REJECT
-DOMAIN-SUFFIX, farm-cn.plista.com, REJECT
-
-# Pubnative, REJECT
-DOMAIN-SUFFIX, pubnative.net, REJECT
-
-# PopAds, REJECT
-DOMAIN-SUFFIX, popads.net, REJECT
-DOMAIN-SUFFIX, c1.popads.net, REJECT
-DOMAIN-SUFFIX, c2.popads.net, REJECT
-DOMAIN-SUFFIX, serve.popads.net, REJECT
-
-# PubMatic, REJECT
-DOMAIN-SUFFIX, pubmatic.com, REJECT
-
-# Qtmojo, REJECT
-DOMAIN-SUFFIX, qtmojo.cn, REJECT
-DOMAIN-SUFFIX, 1.qtmojo.cn, REJECT
-DOMAIN-SUFFIX, creatim.qtmojo.cn, REJECT
-DOMAIN-SUFFIX, wmcdn.qtmojo.cn, REJECT
-DOMAIN-SUFFIX, qtmojo.com, REJECT
-
-# Qumi (趣米), REJECT
-DOMAIN-SUFFIX, qumi.com, REJECT
-DOMAIN-SUFFIX, apt.qumi.com, REJECT
-DOMAIN-SUFFIX, cut.qumi.com, REJECT
-DOMAIN-SUFFIX, exp.qumi.com, REJECT
-
-# Quantcast, REJECT
-DOMAIN-SUFFIX, quantcount.com, REJECT
-DOMAIN-SUFFIX, quantserve.com, REJECT
-DOMAIN-SUFFIX, cms.quantserve.com, REJECT
-DOMAIN-SUFFIX, edge.quantserve.com, REJECT
-DOMAIN-SUFFIX, pixel.quantserve.com, REJECT
-DOMAIN-SUFFIX, secure.quantserve.com, REJECT
-
-# Rayjump, REJECT
-DOMAIN-SUFFIX, rayjump.com, REJECT
-DOMAIN-SUFFIX, net.rayjump.com, REJECT
-DOMAIN-SUFFIX, setting.rayjump.com, REJECT
-
-# Rubicon Project, REJECT
-DOMAIN-SUFFIX, rubiconproject.com, REJECT
-DOMAIN-SUFFIX, beacon-us-sjc1.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, eus.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, optimized-by.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, pixel.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, secure-assets.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, tap.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, tap-cdn.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, tap-t.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, token.rubiconproject.com, REJECT
-DOMAIN-SUFFIX, usync.aws.rubiconproject.com, REJECT
-
-# Smart AdServer, REJECT
-DOMAIN-SUFFIX, smartadserver.com, REJECT
-DOMAIN-SUFFIX, cdn1.smartadserver.com, REJECT
-DOMAIN-SUFFIX, ww251.smartadserver.com, REJECT
-DOMAIN-SUFFIX, ww881.smartadserver.com, REJECT
-DOMAIN-SUFFIX, www6.smartadserver.com, REJECT
-
-# Snapmobile, REJECT
-DOMAIN-SUFFIX, snap.snapmobile.asia, REJECT
-DOMAIN-SUFFIX, snapmobileasia.net, REJECT
-DOMAIN-SUFFIX, selfie.snapmobileasia.net, REJECT
-
-# StatCounter, REJECT
-DOMAIN-SUFFIX, statcounter.com, REJECT
-DOMAIN-SUFFIX, c.statcounter.com, REJECT
-DOMAIN-SUFFIX, c1.statcounter.com, REJECT
-DOMAIN-SUFFIX, c2.statcounter.com, REJECT
-DOMAIN-SUFFIX, secure.statcounter.com, REJECT
-
-# Segment, REJECT
-DOMAIN-SUFFIX, segment.com, REJECT
-DOMAIN-SUFFIX, segment.io, REJECT
-DOMAIN-SUFFIX, cdn-settings.segment.com, REJECT
-DOMAIN-SUFFIX, mobile-service.segment.com, REJECT
-
-# Sigmob, REJECT
-DOMAIN-SUFFIX, adservice.sigmob.cn, REJECT
-
-# Sizmek, REJECT
-DOMAIN-SUFFIX, serving-sys.com, REJECT
-DOMAIN-SUFFIX, activity.serving-sys.com, REJECT
-DOMAIN-SUFFIX, bs.serving-sys.com, REJECT
-DOMAIN-SUFFIX, bsch.serving-sys.com, REJECT
-DOMAIN-SUFFIX, datacapture.serving-sys.com, REJECT
-DOMAIN-SUFFIX, ds.serving-sys.com, REJECT
-DOMAIN-SUFFIX, ds-ll.serving-sys.com, REJECT
-DOMAIN-SUFFIX, secure-ds.serving-sys.com, REJECT
-DOMAIN-SUFFIX, us.bs.serving-sys.com, REJECT
-
-# Smaato, REJECT
-DOMAIN-SUFFIX, smaato.net, REJECT
-
-# StartApp, REJECT
-DOMAIN-SUFFIX, startapp.com, REJECT
-DOMAIN-SUFFIX, startappexchange.com, REJECT
-DOMAIN-SUFFIX, startappservice.com, REJECT
-DOMAIN-SUFFIX, lp.startapp.com, REJECT
-DOMAIN-SUFFIX, init.startappexchange.com, REJECT
-DOMAIN-SUFFIX, dts.akamai.startappexchange.com, REJECT
-DOMAIN-SUFFIX, images.startappservice.com, REJECT
-DOMAIN-SUFFIX, req.startappservice.com, REJECT
-
-# Taptica, REJECT
-DOMAIN-SUFFIX, clk.taptica.com, REJECT
-
-# TGBus, REJECT
-DOMAIN-SUFFIX, vista.tgbusdata.cn, REJECT
-DOMAIN-SUFFIX, vista.tgbus.com, REJECT
-
-# Touclick, REJECT
-DOMAIN-SUFFIX, touclick.com, REJECT
-DOMAIN-SUFFIX, cap.touclick.com, REJECT
-DOMAIN-SUFFIX, ver.touclick.com, REJECT
-
-# Trafficfactory, REJECT
-DOMAIN-SUFFIX, trafficfactory.biz, REJECT
-DOMAIN-SUFFIX, media.trafficfactory.biz, REJECT
-DOMAIN-SUFFIX, rpc-php.trafficfactory.biz, REJECT
-
-# Trafficjunky, REJECT
-DOMAIN-SUFFIX, trafficjunky.com, REJECT
-DOMAIN-SUFFIX, trafficjunky.net, REJECT
-DOMAIN-SUFFIX, media.trafficjunky.net, REJECT
-DOMAIN-SUFFIX, vz-cdn.trafficjunky.net, REJECT
-
-# TalkingData, REJECT
-DOMAIN-SUFFIX, talkingdata.com, REJECT
-DOMAIN-SUFFIX, talkingdata.net, REJECT
-DOMAIN-SUFFIX, tenddata.com, REJECT
-DOMAIN-SUFFIX, gaandroid.talkingdata.net, REJECT
-DOMAIN-SUFFIX, tdcv3.talkingdata.net, REJECT
-DOMAIN-SUFFIX, u.talkingdata.net, REJECT
-DOMAIN-SUFFIX, cpatrk.net, REJECT
-
-# Tapad, REJECT
-DOMAIN-SUFFIX, tapad.com, REJECT
-DOMAIN-SUFFIX, pixel.tapad.com, REJECT
-
-# Tapjoy, REJECT
-DOMAIN-SUFFIX, tapjoy.cn, REJECT
-DOMAIN-SUFFIX, tapjoy.com, REJECT
-DOMAIN-SUFFIX, tapjoyads.com, REJECT
-DOMAIN-SUFFIX, ws.tapjoyads.com, REJECT
-
-# 推啊 (Tuia), REJECT
-DOMAIN-SUFFIX, tuia.cn, REJECT
-DOMAIN-SUFFIX, engine.tuia.cn, REJECT
-DOMAIN-SUFFIX, yun.tuia.cn, REJECT
-
-# VigLink, REJECT
-DOMAIN-SUFFIX, viglink.com, REJECT
-DOMAIN-SUFFIX, api.viglink.com, REJECT
-DOMAIN-SUFFIX, cdn.viglink.com, REJECT
-DOMAIN, apicdn.viglink.com, REJECT
-DOMAIN, mc.viglink.com, REJECT
-DOMAIN, ns2.viglink.com, REJECT
-DOMAIN, ns3.viglink.com, REJECT
-DOMAIN, ns4.viglink.com, REJECT
-DOMAIN, qa.viglink.com, REJECT
-
-# Voiceads, REJECT
-DOMAIN-SUFFIX, agr.voiceads.cn, REJECT
-DOMAIN-SUFFIX, ws.voiceads.cn, REJECT
-DOMAIN-SUFFIX, voiceads.com, REJECT
-
-# Vungle, REJECT
-DOMAIN-SUFFIX, vungle.cn, REJECT
-
-# Vpon, REJECT
-DOMAIN-SUFFIX, vpon.com, REJECT
-DOMAIN-SUFFIX, beta.vpon.com, REJECT
-DOMAIN-SUFFIX, biz.vpon.com, REJECT
-DOMAIN-SUFFIX, fw.vpon.com, REJECT
-DOMAIN-SUFFIX, jira.vpon.com, REJECT
-DOMAIN-SUFFIX, m.vpon.com, REJECT
-DOMAIN-SUFFIX, tw.adon.vpon.com, REJECT
-DOMAIN-SUFFIX, tw.api.vpon.com, REJECT
-DOMAIN-SUFFIX, cn.pub.vpon.com, REJECT
-DOMAIN-SUFFIX, tw.pub.vpon.com, REJECT
-
-# Yandex, REJECT
-DOMAIN-SUFFIX, st.yandexadexchange.net, REJECT
-DOMAIN-SUFFIX, ads.yandex.com, REJECT
-
-# Yengo, REJECT
-DOMAIN-SUFFIX, st.yengo.com, REJECT
-
-# 亿起发, REJECT
-DOMAIN-SUFFIX, yiqifa.com, REJECT
-
-# 优效平台, REJECT
-DOMAIN-SUFFIX, youxiaoad.com, REJECT
-DOMAIN-SUFFIX, api.youxiaoad.com, REJECT
-DOMAIN-SUFFIX, source.youxiaoad.com, REJECT
-DOMAIN-SUFFIX, ssp.youxiaoad.com, REJECT
-DOMAIN-SUFFIX, sspapi.youxiaoad.com, REJECT
-
-# 指点传媒, REJECT
-DOMAIN-SUFFIX, zhidian3g.cn, REJECT
-DOMAIN-SUFFIX, ad.zhidian3g.cn, REJECT
-DOMAIN-SUFFIX, soft.zhidian3g.cn, REJECT
-
-# 诸葛智能, REJECT
-DOMAIN, zgsdk.zhugeio.com, REJECT
-
-# Zedo, REJECT
-DOMAIN-SUFFIX, zedo.com, REJECT
-DOMAIN-SUFFIX, d8.zedo.com, REJECT
-DOMAIN-SUFFIX, z1.zedo.com, REJECT
-
-
-
 [Rewrite]
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
-
 
 
 # > 阿里巴巴
@@ -1771,7 +1125,6 @@ request if ${url} ~= /^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luck
 # hostname = gw.aihuishou.com
 request if ${url} ~= /^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement/i then reject(404)
 
-
 # > 爱奇艺
 # hostname = -i.vip.iqiyi.com, *.iqiyi.com
 # 播放页开通会员提示
@@ -1786,7 +1139,6 @@ request if ${url} ~= /^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_contr
 # > 爱企查
 # hostname = b2baifanfan.baidu.com
 request if ${url} ~= /^https?:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum/i then reject(200)
-
 
 # > 爱思助手
 # hostname = list-app-m.i4.cn
@@ -1976,8 +1328,6 @@ request if ${url} ~= /^https?:\/\/.+\.byteimg\.com\/web\.business\.image/i then 
 # hostname = gateway-api.dushu365.com
 request if ${url} ~= /^https?:\/\/gateway-api\.dushu365\.com\/chief-orch\/config\/config\/v100\/appConfig/i then reject(404)
 
-
-
 # > 飞猪
 # hostname = acs.m.taobao.com, gw.alicdn.com
 request if ${url} ~= /^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict)/i then reject_dict(200)
@@ -1999,7 +1349,6 @@ request if ${url} ~= /^https?:\/\/amap-aos-info-nogw\.amap\.com\/ws\/aos\/alimam
 # hostname = v.icbc.com.cn
 # 如开启可自行添加主机名
 request if ${url} ~= /^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\//i then reject(200)
-
 
 
 # > 广发银行
@@ -2045,10 +1394,6 @@ request if ${url} ~= /^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\
 request if ${url} ~= /^https?:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ads\/[0-9]+\/materials/i then reject_dict(200)
 request if ${url} ~= /^https?:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\//i then reject(404)
 
-
-
-
-
 # > 今日头条
 # hostname = p*.pstatp.com
 # 感谢【Jörgen Frecht】分享
@@ -2077,302 +1422,13 @@ request if ${url} ~= /^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedi
 # hostname = api.coolapk.com, www.coolapk.com
 # ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
-# > 酷我音乐
-# hostname = audiobookpay.kuwo.cn, mgxhtj.kuwo.cn, nmobi.kuwo.cn, searchrecterm.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn
-# 广告
-request if ${url} ~= /^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p\?op=get_advertright_endtime/i then reject_dict(200)
-
-# > 快递100
-# hostname = p.kuaidi100.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
-request if ${url} ~= /^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do/i then reject(404)
-response if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do$/i then response.json.delete(["adsplash", "adIsConsumable", "adProductId", "nologin_tips", "index_banner", "me_banner", "index_banner_shadow", "adshongbao", "adsapp_homepage_ticket_pop", "adsoptimizationsend", "adsapp_activity_ad_array", "adbanner", "adposition", "adShowAgainTime"])
-response if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/apicenter\/xcx\.dox/i then response.json.delete("data.secondMenuList")
-request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/advertisement\//i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\?/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\//i then reject(404)
-request if ${url} ~= /^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union/i then reject(404)
-request if ${url} ~= /^https:\/\/images\.pinduoduo\.com\/mrk\//i then reject(404)
-request if ${url} ~= /^https:\/\/images\.pinduoduo\.com\/marketing_api\//i then reject(404)
-
-# > 快看
-# hostname = api.kkmh.com
-request if ${url} ~= /^https?:\/\/api\.kkmh\.com\/v\d\/ad\/show/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.kkmh\.com\/v\d\/advertisement\//i then reject(200)
-
-# > 快手
-# hostname = az4-api.ksapisrv.com, az4-api-idc.ksapisrv.com, az2-api.ksapisrv.com, az2-api-idc.ksapisrv.com, apissl.gifshow.com, apissl.ksapisrv.com, az2-api-js.gifshow.com, az2-live.ksapisrv.com
-response if ${url} ~= /^https:\/\/(apissl|az2-api(-js|-idc)?)\.(gifshow|ksapisrv)\.com\/rest\/system\/startup\?/i then response.json.delete(["reskinConfig", "sidebarExSquareStyle.moreList", "sidebarExSquareStyle.topList"])
-response if ${url} ~= /^https:\/\/(apissl|az2-api(-js|-idc)?)\.(gifshow|ksapisrv)\.com\/rest\/system\/startup\?/i then response.json.jq(".sidebarExSquareStyle.commonlyUsedList |= map(select(.title == \"设置\" or .title == \"历史记录\" or .title == \"草稿箱\" or .title == \"我的钱包\" or .title == \"小程序\" or .title == \"未成年人模式\" or .title == \"官方客服\" or .title == \"内容偏好\" or .title == \"离线模式\" or .title == \"稍后再看\" or .title == \"举报中心\" or .title == \"挂件\"))")
-response if ${url} ~= /^https:\/\/az2-live\.ksapisrv\.com\/rest\/n\/live\/feed\/square\/refresh\?/i then response.json.delete("data.banners")
-request if ${url} ~= /^https:\/\/az2-api\.ksapisrv\.com\/rest\/n\/taskCenter\/task\/report\?/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/az2-api\.ksapisrv\.com\/rest\/n\/ad\//i then reject_dict(200)
-response if ${url} ~= /^https:\/\/az4-api(-idc)?\.ksapisrv\.com\/rest\/n\/feed\/selectionFast\?/i then response.json.jq("if (.feeds | type) == \"array\" then .feeds |= map(select(.ad | not)) else . end")
-response if ${url} ~= /^https:\/\/az2-api-js\.gifshow\.com\/rest\/n\/user\/profile\/v2\?/i then response.json.delete("postRecommends")
-
-# > Keep
-# hostname = api.gotokeep.com, kad.gotokeep.com, static1.keepcdn.com
-request if ${url} ~= /^https?:\/\/static1\.keepcdn\.com\/ark_optimus\/202\d\/*\/*\/.*.(png|jpg)/i then reject(200)
-# 屏蔽应用内弹窗
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/guide-webapp\/v\d\/popup\/getPopUp/i then reject(404)
-# 屏蔽部分启动弹窗
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide/i then reject(404)
-# 屏蔽开屏广告请求
-request if ${url} ~= /^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/i then reject(404)
-# 屏蔽青少年弹窗
-request if ${url} ~= /^https?:\/\/api.gotokeep.com\/cauchy\/growth\/init/i then reject(404)
-# 屏蔽搜索栏自动填充词
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list/i then reject(404)
-# 屏蔽热词
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list/i then reject(404)
-# 屏蔽hotCourse
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list/i then reject(404)
-# 屏蔽adwebapp
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/i then reject(404)
-# 屏蔽广告预加载
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload/i then reject(404)
-# 屏蔽adbox
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/training\/box\/config/i then reject(404)
-# 屏蔽更新
-request if ${url} ~= /^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check/i then reject(404)
-
-
-# >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
-
-# > 拉卡拉
-# hostname = gmp.lakala.com, wallet.lakala.com
-request if ${url} ~= /^https:\/\/(?:gmp|wallet)\.lakala\.com\/(?:gmp\/openapi\/v2\/resource_space\/getResourceSpace|m\/(?:a\/lama\/mgt\/activity\/biz\/query\/byMerInfo|lama\/mgt\/activity\/(?:bank|biz)\/query\/list))/i then reject_dict(200)
-
-# > 来电
-# hostname = mobile-api.imlaidian.com
-# 小程序净化
-request if ${url} ~= /^https?:\/\/mobile-api\.imlaidian\.com\/api\/args/i then reject_dict(200)
-
-# > 来疯
-# hostname = api.laifeng.com, api.jxedt.com
-request if ${url} ~= /^https?:\/\/api\.laifeng\.com\/v\d\/start\/ads/i then reject(404)
-
-# > 莱充
-# hostname = mobile.laichon.com, shop.laichon.com
-request if ${url} ~= /^https?:\/\/(mobile|shop)\.laichon\.com\/api\/(v1\/goods\/goodsList|exposureAdvStatistics|getWebAdvList)/i then reject(404)
-
-# > 拦截100
-# hostname = tagit.hyhuo.com
-request if ${url} ~= /^https?:\/\/tagit\.hyhuo\.com\/recover\/list/i then reject(404)
-
-# > 蓝基因
-# hostname = tk.lanjiyin.com.cn
-# 首页弹窗广告 OCc分享
-request if ${url} ~= /^https?:\/\/tk\.lanjiyin\.com\.cn\/ad\/getAdList/i then reject(404)
-
-# > 懒人听书
-# hostname = 118.178.214.118, dapis.mting.info, display.wting.info
-request if ${url} ~= /^https?:\/\/118\.178\.214\.118\/yyting\/advertclient\/ClientAdvertList\.action/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/dapis\.mting\.info\/yyting\/advertclient\/ClientAdvertList\.action/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/.*\/yyting\/advertclient\/ClientAdvertList.action/i then reject(404)
-request if ${url} ~= /^https?:\/\/display\.wting\.info\/.*.jpeg/i then reject(200)
-
-# > 懒投资
-# hostname = ios.lantouzi.com
-request if ${url} ~= /^https?:\/\/ios\.lantouzi\.com\/api\/startpage/i then reject(404)
-
-# > 乐堡潮玩馆小程序
-# hostname = tbgapplet.carlsberg.asia
-# 开屏广告+弹窗广告
-request if ${url} ~= /^https?:\/\/tbgapplet\.carlsberg\.asia\/tuborg\/banner\/(loading|index)/i then reject_dict(200)
-
-# > 乐橙
-# hostname = dl-cu-hz.lechange.cn
-request if ${url} ~= /^https:\/\/dl-cu-hz\.lechange\.cn\/oms-online\/advertisementPush/i then reject(404)
-
-# > 联想
-# hostname = api.club.lenovo.cn
-request if ${url} ~= /^https?:\/\/api\.club\.lenovo\.cn\/common\/open_ad/i then reject(404)
-
-# > 联想至像打印
-# hostname = abcapi.lenovoimage.com
-# app开屏
-request if ${url} ~= /^https:\/\/abcapi\.lenovoimage\.com\/v1\/promote\/startup/i then reject_dict(200)
-
 # > 两步路
 # host-suffix, admobile.top, reject
 request if ${url} ~= /https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex)/i then reject(404)
 
-# > 猎聘
-# hostname = api-ac.liepin.com, api-wanda.liepin.com
-request if ${url} ~= /^https?:\/\/api-ac\.liepin\.com\/api\/com\.liepin\.cyclops\.live\.get-ad-cards/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app/i then reject(200)
-
-# > 鲁班到家用户版
-# hostname = order-app-api.lbdj.com
-# 去开屏广告
-request if ${url} ~= /^https:\/\/order-app-api\.lbdj\.com\/lbdj\/apporder\/ad\//i then reject_dict(200)
-
-# > 旅法师营地
-# hostname = www.iyingdi.cn
-request if ${url} ~= /^https?:\/\/www\.iyingdi\.cn\/ad/i then reject(200)
-
-# > 旅途随身听
-# hostname = www.1314zhilv.com
-request if ${url} ~= /^https?:\/\/www\.1314zhilv\.com\/ltsstnew\/(guideScenic\/getRecentlyUpdatedScenic|city\/getWeatherByCityName)/i then reject_dict(200)
-
-# > 罗森点点
-# hostname = plt.yorentown.com, lawsonapi.yorentown.com
-request if ${url} ~= /^https:\/\/plt\.yorentown\.com\/pltapp\/v1\/banner/i then reject_dict(200)
-
-# > Line
-# hostname = a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me, static.line-scdn.net, nelo2-col.linecorp.com, uts-front.line-apps.com, cix.line-apps.com, legy.line-apps.com, ec-bot-obs.line-scdn.net
-request if ${url} ~= /^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?/i then reject_img(200)
-request if ${url} ~= /^https:\/\/a\.line\.me\/er\/l.*\/v\d\/event\/image/i then reject_img(200)
-request if ${url} ~= /^https:\/\/ad\.line-scdn\.net\/0h/i then reject(404)
-request if ${url} ~= /^https:\/\/ec-bot-obs\.line-scdn\.net\/0h[-0-9a-zA-Z_]{50,}/i then reject_img(200)
-request if ${url} ~= /^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v1$/i then reject(404)
-request if ${url} ~= /^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v1\/ads$/i then reject(404)
-request if ${url} ~= /^https:\/\/gw\.line\.naver\.jp\/tr\/event$/i then reject(404)
-request if ${url} ~= /^https:\/\/lan\.line\.me\/v1\/line\/ios/i then reject(404)
-request if ${url} ~= /^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v1$/i then reject(404)
-request if ${url} ~= /^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v1$/i then reject(404)
-request if ${url} ~= /^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$/i then reject(404)
-request if ${url} ~= /^https:\/\/legy\.line-apps\.com:443\/tr\/event$/i then reject(404)
-request if ${url} ~= /^https:\/\/web-mmap-pay\.line-apps\.com\/tw\/liff\/campaign\/v1\/aggregate\/ad\/banner\//i then reject_img(200)
-request if ${url} ~= /^https:\/\/buy\.line\.me\/api\/graphql\?variables/i then reject(404)
-request if ${url} ~= /^https:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$/i then reject_img(200)
-request if ${url} ~= /^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png)/i then reject_img(200)
-request if ${url} ~= /^https:\/\/cix\.line-apps\.com\/R4\?/i then reject(404)
-request if ${url} ~= /^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json/i then reject(404)
-request if ${url} ~= /^https:\/\/static\.line-scdn\.net\/ad-sdk\//i then reject(404)
-request if ${url} ~= /^https:\/\/nelo2-col\.linecorp\.com\/_store$/i then reject(404)
-
-# > LING Club-原菱菱邦
-# hostname = cdn-oss.00bang.cn, api.00bang.cn
-#^https?:\/\/cdn-oss\.00bang\.cn\/image\/LLB_OSS[A-Z0-9]{32}.jpg reject-200
-# (第一条一劳永逸,误杀很多,后面几条没有误杀,需要频繁更新规则)
-request if ${url} ~= /^https?:\/\/cdn-oss\.00bang\.cn\/image\/LLB_OSS50140C35669841B7A4218215C8C5338A\.jpg/i then reject(200)
-request if ${url} ~= /^https?:\/\/cdn-oss\.00bang\.cn\/image\/LLB_OSS32D553B6981546909417BEF3B7A3BC4D\.jpg/i then reject(200)
-request if ${url} ~= /^https?:\/\/cdn-oss\.00bang\.cn\/image\/LLB_OSSC8A54C9913CA475DABECA1054A219CA2\.jpg/i then reject(200)
-request if ${url} ~= /^https?:\/\/cdn-oss\.00bang\.cn\/image\/LLB_OSS2FC543D52E7447678660A4D9EC4F6C60\.jpg/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.00bang\.cn\/llb\/baseinfo\/advertise\/getAdvertiseByPageCode/i then reject(200)
-
-# > linxi
-# hostname = api.internetofcity.cn
-request if ${url} ~= /^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/(getSplashList|getList)/i then reject(404)
-
-# > LocSim
-# hostname = app.aa-ab.com
-# 屏蔽虚拟定位升级弹窗
-request if ${url} ~= /^https?:\/\/app\.aa-ab\.com\/home/i then reject(200)
-
-# > lofter
-# hostname = ad.lofter.com, images.pinduoduo.com, lofter.lf127.net
-# 开屏广告 感谢@林夕分享
-request if ${url} ~= /^https?:\/\/ad\.lofter.com\/v1\.1\/yitou\/madr/i then reject(200)
-request if ${url} ~= /^https?:\/\/images\.pinduoduo\.com\/marketing\_api/i then reject(200)
-request if ${url} ~= /^https?:\/\/lofter\.lf127\.net\/ad\-material/i then reject(200)
-
-
-# >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
-
-# > 妈妈网孕育
-# hostname = qimg.cdnmama.com
-# 开屏广告
-request if ${url} ~= /^https?:\/\/qimg\.cdnmama\.com\/rd/i then reject_dict(200)
-
-# > 马达出行
-# hostname = mada-travel.17u.cn, ebk.17u.cn
-# 开屏广告
-request if ${url} ~= /^https:\/\/mada-travel\.17u\.cn\/mdapi\/config\/ads/i then reject_dict(200)
-# 我的会员中心
-request if ${url} ~= /^https:\/\/mada-travel\.17u\.cn\/mdapi\/config\/mine/i then reject_dict(200)
-# 首页下方推广
-request if ${url} ~= /^https:\/\/mada-travel\.17u\.cn\/mdapi\/config\/tabAct/i then reject_dict(200)
-# 屏蔽更新
-request if ${url} ~= /^http:\/\/ebk\.17u\.cn\/tctrafficappversionadmin\/api\/getLatestVersionApp/i then reject_dict(200)
-
-# > 马蜂窝
-# hostname = mapi.mafengwo.cn
-request if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/(travelguide\/)?ad/i then reject(404)
-request if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/widget\/note\/get_widget_note/i then reject(404)
-request if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/system\/update\/check_update/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/system\/config\/(get|mark)_(push|alert)_config/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/mapi\.mafengwo\.cn\/system\/push\/get_local_push_config/i then reject(404)
-
-# > 马卡龙玩图
-# hostname = app.api.versa-ai.com, static01.versa-ai.com
-request if ${url} ~= /^https?:\/\/app\.api\.versa-ai\.com\/launch\/ads\?/i then reject(200)
-request if ${url} ~= /^https?:\/\/static01\.versa-ai\.com\/upload\/ec0ba51d68f9\/.*.jpg/i then reject(200)
-
-# > 埋堆堆
-# hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com, conf-darwin.xycdn.com, *.ubixioe.com
-request if ${url} ~= /^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/t-dsp\.pinduoduo\.com/i then reject(200)
-request if ${url} ~= /^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php/i then reject(200)
-request if ${url} ~= /^https?:\/\/sfo\.mddcloud\.com\.cn\/api\/v\d\/sfo\/popup_displays?/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/tower\.ubixioe\.com\/mob\/mediation/i then reject(404)
-request if ${url} ~= /^https?:\/\/toblog\.ctobsnssdk\.com/i then reject(200)
-request if ${url} ~= /^https?:\/\/conf-darwin\.xycdn\.com/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com/i then reject(404)
-
-# > 买单吧
-# hostname = creditcardapp.bankcomm.cn, creditcardapp.bankcomm.com, creditcard.bankcomm.cn, creditcard.bankcomm.com
-request if ${url} ~= /^https?:\/\/creditcard\.bankcomm\.(com|cn)\/tfimg\/public00\/M00\/[a-zA-Z0-9]{2}\/[a-zA-Z0-9]{2}\/[a-zA-Z0-9-]{30}\.(jpg|jpeg)/i then reject(404)
-request if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_interface\/common\/(qryPopAds|qryLaunchAds)\.do/i then reject(200)
-request if ${url} ~= /^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/mappweb_interaction\/appInfo\/appNewestVersion/i then reject(200)
-
-# > 麦当劳
+#麦当劳
 # hostname = api.mcd.cn
 request if ${url} ~= /^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash/i then reject(200)
-
-# > 脉脉
-# hostname = open.taou.com, h3.open.taou.com
-# 感谢【可莉】分享
-# 开屏广告、职位页面横幅
-request if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/adshow\?/i then reject_dict(200)
-# 赠送礼物 横幅
-request if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/pay\/v5\/check_gift\?/i then reject_dict(200)
-# 帖子文末推广卡片
-request if ${url} ~= /^https:\/\/(h3\.)?open\.taou\.com\/maimai\/go_gossip_darwin\/external\/v2\/query_flow_cards\?/i then reject_dict(200)
-
-# > 漫画人
-# hostname = mangaapi.manhuaren.com, *mangaapi.manhuaren.*
-request if ${url} ~= /^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds/i then reject(404)
-request if ${url} ~= /^https?:\/\/.*mangaapi\.manhuaren\.\w{2,4}\/v\d\/public\/(getStartUpMessage|getStartPageAds|getShelfActivity)/i then reject(404)
-request if ${url} ~= /^https?:\/\/.*mangaapi\.manhuaren\.\w{2,4}\/v\d\/ad/i then reject(404)
-
-# > 芒果TV
-# hostname = *.mgtv.com
-# 无用请求
-request if ${url} ~= /^https?:\/\/[\d\.]+:\d{5}\/\?cmd=indexes/i then reject(404)
-# 首页左上角推广
-request if ${url} ~= /^https?:\/\/[\d\.]+\/odin\/c1\/(channel\/ads|skin\/config)\?/i then reject_dict(200)
-# 底部tab红点
-request if ${url} ~= /^https?:\/\/damang\.api\.mgtv\.com\/station\/album\/red\/dot\?/i then reject_dict(200)
-# 播放器界面
-request if ${url} ~= /^https?:\/\/hb-boom\.api\.mgtv\.com\/release\/pullReleaseInfo/i then reject_dict(200)
-# 升级弹窗
-request if ${url} ~= /^https?:\/\/mobile\.api\.mgtv\.com\/v2\/mobile\/checkUpdate\?/i then reject_dict(200)
-# 搜索框填充词
-request if ${url} ~= /^https?:\/\/mobileso\.bz\.mgtv\.com\/spotlight\/search\/v1\?/i then reject_dict(200)
-
-# > 猫耳FM
-# hostname = app.missevan.com
-# 开屏广告 感谢【可莉🅥】分享
-request if ${url} ~= /^https?:\/\/app\.missevan\.com\/site\/launch\?/i then reject(404)
-
-# > 猫眼
-# hostname = p0.pipi.cn
-# 开屏广告
-request if ${url} ~= /^https:\/\/p0\.pipi\.cn\/adAdmin\/\w+\.jpg\?imageMogr2\/quality\//i then reject_dict(200)
-request if ${url} ~= /^https:\/\/p0\.pipi\.cn\/adAdmin\/\w+\.(jpg|png)\?imageMogr2\/thumbnail\/(860x0|!165x165|!1049x1169)/i then reject_dict(200)
-
-# > 每日精选
-response if ${url} ~= /http:\/\/dili.sqcosmos.com\/jiekou\/mains\/p\d+.html/i then response.json.jq(".album |= map(select(.id != \"4154\" and .id != \"4165\"))")
-request if ${url} ~= /http:\/\/dili.sqcosmos.com\/jiekou\/endpage\/ad/i then reject_dict(200)
-
-# > 每日优鲜
-# hostname = j-image.missfresh.cn
-request if ${url} ~= /^https?:\/\/j-image\.missfresh\.cn\/img_(.+)\.gif$/i then reject(404)
-request if ${url} ~= /^https?:\/\/j-image\.missfresh\.cn\/img_(.+)\.(jpg|jpeg|gif|png)\?iopcmd=convert&dst=webp&q=85$/i then reject(404)
 
 # > 美图秀秀
 # hostname = mea.meitudata.com, adui.tg.meitu.com
@@ -2393,147 +1449,17 @@ request if ${url} ~= /^http:\/\/59\.82\.113\.10\/amdc\/mobileDispatch\?appkey=21
 # hostname = cdb.meituan.com
 request if ${url} ~= /^https?:\/\/cdb\.meituan\.com\/marketing\/source\/getPageSlotList/i then reject_dict(200)
 
-# > 美团众包
-# hostname = peisongapi.meituan.com
-request if ${url} ~= /^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage/i then reject(200)
-
-# > 美味不用等
-# hostname = capi.mwee.cn
-request if ${url} ~= /^https?:\/\/capi\.mwee\.cn\/app-api\/V\d{2}\/app\/(ad|getstartad)/i then reject(404)
-
-# > 美柚
-# hostname = x.seeyouyima.com, axxd.xmseeyouyima.com, config-service.seeyouyima.com
-request if ${url} ~= /^http:\/\/x\.seeyouyima\.com\/adx\/staticstics\?/i then reject(404)
-request if ${url} ~= /^https:\/\/axxd\.xmseeyouyima\.com\/ad\//i then reject(404)
-request if ${url} ~= /^https:\/\/axxd\.xmseeyouyima\.com\/ad_statistics\?/i then reject(404)
-request if ${url} ~= /^https:\/\/axxd\.xmseeyouyima\.com\/v1\/getad\?/i then reject(404)
-request if ${url} ~= /^https:\/\/axxd\.xmseeyouyima\.com\/pregetad\?/i then reject(404)
-
-# > 咪咕视频
-# hostname = ggc.miguvideo.com, public-deliver9.miguvideo.com, display*-sc.miguvideo.com, recommend-dy.miguvideo.com, app-sc.miguvideo.com, common-sc.miguvideo.com, ggx*.miguvideo.com, ggic*.miguvideo.com
-request if ${url} ~= /^https?:\/\/ggc\.miguvideo\.com\/v1\/iflyad\/deliverysystem\/direct\//i then reject_img(200)
-request if ${url} ~= /^https?:\/\/public-deliver9\.miguvideo\.com\/deliver\/site\/batchMatch\/mergeSpot\/miguvideo\//i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/recommend-dy\.miguvideo\.com\/recommend-dynamic\/dataSource\/v1\/recommend\/merge/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/app-sc\.miguvideo\.com\/app-management\/v1\/staticcache\/settings\/miguvideo\/SHARE_PIC/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/common-sc\.miguvideo\.com\/videoActivity\/activityList\//i then reject_dict(200)
-#^https?:\/\/display-sc\.miguvideo\.com\/display\/v3\/static\/PERSONAL_CENTER\/ reject-dict
-request if ${url} ~= /^https?:\/\/ggx.+\.miguvideo\.com\/request\/sdk.+[^?]*$/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ggic\d+.miguvideo\.com\/ad\//i then reject_dict(200)
 
 # > 米家
 # hostname = home.mi.com
 request if ${url} ~= /^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner)/i then reject_dict(200)
 request if ${url} ~= /^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/resource\/realtime\/openingBanner/i then reject_dict(200)
 
-# > 秒拍
-# hostname = b-api.ins.miaopai.com
-request if ${url} ~= /^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad\//i then reject(404)
-
-# > 民生银行
-# hostname = www.cmbc.com.cn, rs.creditcard.cmbc.com.cn
-request if ${url} ~= /^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\//i then reject(200)
-request if ${url} ~= /^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png/i then reject(200)
-
-# > 蘑菇租房
-# hostname = api.mgzf.com
-request if ${url} ~= /^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage/i then reject(404)
-
-# > 全民生活
-# hostname = rs.creditcard.cmbc.com.cn
-request if ${url} ~= /^https?:\/\/rs.creditcard.cmbc.com.cn\/mmc\/img\/126f35586ece469aa2daf2e451ba7b4d.jpg/i then reject(200)
-
-# > MIX
-# hostname = dispatcher.camera360.com
-request if ${url} ~= /^https?:\/\/dispatcher\.camera360\.com\/api\/v\d\/list$/i then reject(404)
-
-
-# >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
-
-# > 奈菲影视
-# hostname = www.nfmovies.com
-request if ${url} ~= /^https?:\/\/www\.nfmovies\.com\/pic\/tu\//i then reject_img(200)
-request if ${url} ~= /^https?:\/\/www\.nfmovies\.com\/templets\/default\/images\/logos/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/www\.nfmovies\.com\/uploads\/images\/play\.jpg/i then reject_img(200)
-
 # > 南方航空
 # hostname = 3g.csair.com
 # 弹窗
 request if ${url} ~= /^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement/i then reject(200)
 
-# > 宁聚
-# hostname = api.nj.nbtv.cn
-# 开屏广告
-request if ${url} ~= /^https?:\/\/api\.nj\.nbtv\.cn\/v2\/advertise\/advertise-r1\/get-list\?data=u8obKDIrIWt2NR9wBuMwQ5O61eEsP/i then reject(200)
-# 弹窗广告
-request if ${url} ~= /^https?:\/\/api\.nj\.nbtv\.cn\/v\d\/common\/system-boot-inform\/detail/i then reject(200)
-
-# > 牛津高阶词典第十版
-# hostname = oxadmin.cp.com.cn
-# 首页下方广告
-request if ${url} ~= /^https?:\/\/oxadmin\.cp\.com\.cn\/api\/hot\/index/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/oxadmin\.cp\.com\.cn\/api\/advertise\/banner/i then reject_dict(200)
-
-# > 牛听听
-# hostname = gateway.benewtech.cn, ntt-app.benewtech.cn
-request if ${url} ~= /^https:\/\/gateway\.benewtech\.cn\/resources-app\/app\/startup\/prepage/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/ntt-app\.benewtech\.cn\/v6\/user\/\d+\/messages\/event/i then reject_dict(200)
-
-# > 农业银行
-# hostname = midc.cdn-static.abchina.com.cn, enjoy.cdn-static.abchina.com
-# ^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(?!bbc2|f015|1655|0992|4678|a194|d8e2|c513|e51c|0ee1|166e|05ca|c882|d5b8|22ed|a0dc|a55a|6f89|3bf9|3c71|52ec|5b62|ve7a|001c|923d|accf|4a10|0bd7|be7a|5b62|5dd6|1f24|006c|775d|bd02|b983|5251|806b|d119|db14|43c9|41d3|8570|2c10|85ea|1435|814e|f422|aec7|738c|d7c8|0538|02b4|fd20|7647|f6ef|07c5|885b|e4cb|685b|30aa|c23b|9603|f27f|eaf8|8011|a5eb|409d|724c|3f2a|e07f|6744|60a6|158c|8ce3) reject-dict
-request if ${url} ~= /^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(ed64|74b5)/i then reject(404)
-request if ${url} ~= /^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/(?!7dc2|fe96|cea3|06a8|1b11|d57b|6918|61db|2d58|aa23|)/i then reject(200)
-request if ${url} ~= /^https?:\/\/firefly\.abchina\.com\.cn\/firefly-collection\/Collect/i then reject(200)
-
-# > NTPlay
-# hostname = blog.nilbt.com
-# 去升级弹窗 【Hua alex】分享
-request if ${url} ~= /^https?:\/\/blog\.nilbt\.com\/static\/api\/update/i then reject(200)
-
-
-# >>>>>>>>>>>>>>> ✅ O ✅ <<<<<<<<<<<<<<
-
-# > ofo共享单车
-# hostname = supportda.ofo.com, ma.ofo.com, activity2.api.ofo.com
-request if ${url} ~= /^https?:\/\/supportda\.ofo\.com\/adaction\?/i then reject(404)
-request if ${url} ~= /^https?:\/\/ma\.ofo\.com\/adImage\//i then reject(404)
-request if ${url} ~= /^https?:\/\/ma\.ofo\.com\/ads/i then reject(404)
-request if ${url} ~= /^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v2\/ads/i then reject(404)
-
-# > omofun
-# hostname = 103.91.210.141
-request if ${url} ~= /^https?:\/\/103\.91\.210\.141\:2515\/xgapp\.php\/v2\/top_notice/i then reject(404)
-
-# > ONE
-# hostname = v3.wufazhuce.com, app.api.d3yuiw4.com, api.21ec74.com
-# 开屏广告
-request if ${url} ~= /^https?:\/\/v3\.wufazhuce\.com:8000\/api\/adpreloadlist/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/app\.api\.d3yuiw4\.com\/api\/app\/ad/i then reject(404)
-request if ${url} ~= /^https?:\/\/api\.21ec74\.com\/v2\.5\/ad/i then reject(404)
-
-# > Oray
-# hostname = slapi.oray.net
-request if ${url} ~= /^https?:\/\/slapi\.oray\.net\/client\/ad/i then reject(404)
-request if ${url} ~= /^https?:\/\/slapi\.oray\.net\/adver/i then reject(404)
-
-
-# >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
-
-# > 澎湃新闻
-# hostname = adpai.thepaper.cn
-request if ${url} ~= /^https?:\/\/adpai\.thepaper\.cn\/.+&ad=/i then reject(404)
-
-# > 皮皮搞笑
-# hostname = adapi.izuiyou.com
-request if ${url} ~= /^https?:\/\/adapi\.izuiyou\.com\/ad\/fetch_api_ads\?/i then reject_dict(200)
-
-# > 票根
-# hostname = pss.txffp.com
-request if ${url} ~= /^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen\//i then reject(200)
-
-# > 票星球
-# hostname = appapi.caiyicloud.com
-request if ${url} ~= /^https:\/\/appapi\.caiyicloud\.com\/cyy_gatewayapi\/home\/pub\/v3\/banners\/app_start_page/i then reject_dict(200)
 
 # > 拼多多
 # hostname = api.pinduoduo.com, api.yangkeduo.com, mobile.yangkeduo.com
@@ -2542,119 +1468,11 @@ request if ${url} ~= /^https?:\/\/api\.pinduoduo\.com\/api\/aquarius\/hungary\/g
 # 多多买菜 开屏广告
 response if ${url} ~= /^https?:\/\/mobile\.yangkeduo\.com\/proxy\/api\/api\/express\/post\/waybill\/red_packet\/goods_list$/i then response.body.replace(/"list":\[.+\]/, "\"list\":[]")
 
-# > 平安好车主
-# hostname = iobs.pingan.com.cn, hcz-member.pingan.com.cn
-request if ${url} ~= /^https?:\/\/iobs\.pingan\.com\.cn\/download\/bweb-per-sf-prd\/bweb/i then reject(200)
-request if ${url} ~= /^https?:\/\/iobs\.pingan\.com\.cn\/download\/icore-aops-base-dmz-prd\/(YourSystemName|icore-apps-ad)/i then reject(200)
-request if ${url} ~= /^https?:\/\/hcz-member\.pingan\.com\.cn\/micro-api\/homepage\/do\/app\/popbox\/getTopPopBox/i then reject(404)
-
-# > 平安口袋银行
-# hostname = cdn.sdb.com.cn
-request if ${url} ~= /^https?:\/\/cdn\.sdb\.com\.cn\/widget\/magic-module-sprite\/general-banner/i then reject(200)
-request if ${url} ~= /^https?:\/\/cdn\.sdb\.com\.cn\/widget\/magic-module-sprite\/dialog-normal/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/cdn\.sdb\.com\.cn\/widget\/pb\/pb-plugins-recomend-content/i then reject_dict(200)
-# 信用卡-精彩活动模块
-#^https?:\/\/cdn\.sdb\.com\.cn\/widget\/magic-module-sprite\/four-rectangle-grid reject-dict
-
-# > 平安壹钱包
-# hostname = mobile.1qianbao.com
-request if ${url} ~= /^https?:\/\/mobile\.1qianbao\.com\/mtp-web\/ui\/op_common_query_business_yqb\.json/i then reject(200)
 
 # > 平安证券
 # hostname = pacdn.m.stock.pingan.com
 # 开屏广告 感谢【umie】分享
 request if ${url} ~= /^https?:\/\/pacdn\.m\.stock\.pingan\.com\/images\//i then reject_dict(200)
-
-# > 朴朴超市
-# hostname = j1.pupuapi.com
-# 开屏广告 感谢【树先生, 可莉】分享
-response if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/notification\/message_center\/unread_number/i then response.json.jq(".data = []")
-# 广告下发
-request if ${url} ~= /^http:\/\/139\.196\.12\.179:8053\/httpdns\//i then reject(404)
-request if ${url} ~= /^http:\/\/106\.55\.220\.18:8053\/httpdns\//i then reject(404)
-request if ${url} ~= /^http:\/\/54\.222\.159\.138:8053\/httpdns\//i then reject(404)
-request if ${url} ~= /^http:\/\/101\.42\.130\.147\/httpdns\/resolve\//i then reject(404)
-# 主页实惠卡横幅
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/member_card\/index\/my/i then reject(404)
-# 搜索框页面热榜
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/search_input_ranking/i then reject_dict(200)
-# 朴朴超市订单待收货页右下角悬浮广告
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/assets\/discount\/order/i then reject_dict(200)
-# 购物车页去换购推荐
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/marketing\/channel\/global_redeem\/top_tip\/v2/i then reject_dict(200)
-# 各种页面的商品推荐
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/hub\/interests\/products\/v2/i then reject_dict(200)
-# 个人主页会员标识
-request if ${url} ~= /^https:\/\/j1\.pupuapi\.com\/client\/member_card\/premium\/user_center/i then reject_dict(200)
-
-# > 浦大喜奔
-# hostname = image.spdbccc.com.cn
-request if ${url} ~= /^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[A-Z0-9]{2}\/[A-Z0-9]{2}\/.+(4038|0571|M511|V-008|g549|b0628|fg817|5w501|Jo341|Z4583|oo845|i4905|MY245|YU472|Y401|w428|s000)/i then reject_dict(200)
-
-# > 浦发银行
-# hostname = lban.spdb.com.cn, wap.spdb.com.cn
-request if ${url} ~= /^https?:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/getAdvList\.ah$/i then reject(404)
-request if ${url} ~= /^https?:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/getAdvertisementList\.ah/i then reject(404)
-request if ${url} ~= /^https?:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/prefetchAdvList\.ah/i then reject(404)
-request if ${url} ~= /^https?:\/\/wap\.spdb\.com\.cn\/mspmk-web-homeassist\/OpenScreenAdv\.ah$/i then reject(404)
-
-# > pikpak
-# hostname = access.mypikpak.com
-request if ${url} ~= /https:\/\/access.mypikpak.com\/access_controller\/v1\/area_accessible/i then reject(404)
-
-# > PushPlus微信推送广告
-# hostname = image.pushplus.plus, www.pushplus.plus
-# 屏蔽图片广告，但是还有css空白模块, 如开启可自行添加主机名
-#^https?:\/\/image\.pushplus\.plus\/ad.* reject-dict
-# 屏蔽广告推送模块，会把“打开小程序”也屏蔽
-#^https?:\/\/www\.pushplus\.plus.* response-body-replace-regex (<head>) $1<style type="text/css"> div.container.py-3.text-center {display: none! important} </style />
-
-
-# >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
-
-# > 七猫小说
-# hostname = open.e.kuaishou.cn, api-access.pangolin-sdk-toutiao-b.com, api-access.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao1.com, dsp-x.jd.com, api-cfg.wtzw.com, p1-lm.adukwai.com, lf-cdn-tos.bytescm.com
-# 删除了域名lf-cdn-tos.bytescm.com，原因是无法MITM
-request if ${url} ~= /^https?:\/\/open\.e\.kuaishou\.cn\/rest\/e\/v3\/open\/univ/i then reject(404)
-request if ${url} ~= /^https?:\/\/api-access\.pangolin-sdk-toutiao-b\.com\/api\/ad\/union\/sdk\/get_ads/i then reject(404)
-request if ${url} ~= /^https?:\/\/api-access\.(pangolin-sdk-toutiao|pangolin-sdk-toutiao1)\.com\/api\/ad/i then reject(404)
-request if ${url} ~= /^https?:\/\/dsp\-x\.jd\.com\/adx\/sdk/i then reject(404)
-request if ${url} ~= /^https?:\/\/api\-cfg\.wtzw\.com\/v1\/(adv|reward|operation)/i then reject(404)
-request if ${url} ~= /^https?:\/\/p1\-lm\.adukwai\.com\/bs2\/adUnionVideo/i then reject(404)
-request if ${url} ~= /^https?:\/\/lf\-cdn\-tos\.bytescm\.com\/obj\/static\/ad/i then reject(404)
-
-# > 奇瑞汽车
-# hostname = mobile-consumer-sapp.chery.cn
-# 开屏广告
-request if ${url} ~= /^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/position\/getShowList\?displayPlatform=1&tabType=0&/i then reject_dict(200)
-
-# > 企迈 - QMAI(包含: 挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵)
-# hostname = webapi.qmai.cn, miniapp.qmai.cn
-request if ${url} ~= /^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert/i then reject(404)
-
-# > 起点读书
-# hostname = qidian.qpic.cn, mage.if.qidian.com, magev6.if.qidian.com
-request if ${url} ~= /^https?:\/\/qidian\.qpic\.cn\/qidian_common/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen/i then reject(404)
-request if ${url} ~= /^https?:\/\/magev6.if.qidian.com\/argus\/api\/v1\/client\/iosad/i then reject(404)
-request if ${url} ~= /^https?:\/\/magev6.if.qidian.com\/argus\/api\/v1\/bookshelf\/getad/i then reject(404)
-request if ${url} ~= /^https?:\/\/magev6.if.qidian.com\/argus\/api\/v4\/client\/getsplashscreen?/i then reject(404)
-# 起点读书投票、章末免费领取章节卡等
-request if ${url} ~= /^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/followsubscribe/i then reject_dict(200)
-# 我的界面内测推广
-request if ${url} ~= /^http[s]?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/refresh/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/adv\/getadvlistbatch/i then reject(404)
-# 书架置顶推广(保留签到移除花哨背景)
-request if ${url} ~= /^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/bookshelf\/getTopOperation/i then reject_dict(200)
-# 发现上面的图标屏蔽
-request if ${url} ~= /^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v2\/adv\/getadvlistbatch/i then reject_dict(200)
-
-# > 汽车之家
-# hostname = adproxy.autohome.com.cn, app2.autoimg.cn
-request if ${url} ~= /^https?:\/\/adproxy\.autohome\.com\.cn\/AdvertiseService\//i then reject_img(200)
-request if ${url} ~= /^https?:\/\/app2\.autoimg\.cn\/apppdfs\//i then reject_img(200)
 
 # > 汽水音乐
 # hostname = webcast-open.douyin.com, beta-luna.douyin.com, ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao?.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com
@@ -2673,83 +1491,7 @@ request if ${url} ~= /^https:\/\/api-access\.pangolin-sdk-toutiao\d?\.com\/api\/
 request if ${url} ~= /^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\//i then reject(404)
 request if ${url} ~= /^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\//i then reject(404)
 
-# > 前程无忧 51Job
-# hostname = appapi.51job*.com, cupid.51job*.comhostname = img01.51jobcdn.com, cupid.51job*.com
-request if ${url} ~= /^https?:\/\/appapi\.51job(app)?\.com\/api\/market\/(adtrace|get_launch|get_prompt)/i then reject(404)
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/index\/recommend-infos/i then reject(404)
 
-
-
-
-
-# 去广告 (需卸载App重装) img01.51jobcdn.com
-request if ${url} ~= /^https:\/\/img01\.51jobcdn\.com\/im\/mkt\/(?:tg\/((19|20)\d{2})banner\/(?!jcgz2\/)|\d{4}\/bd\/\d{4}\/).*\.jpg/i then reject(404)
-# 屏蔽更新
-request if ${url} ~= /^https?:\/\/appapi\.51job(app)?\.com\/api\/util\/get_version/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/index\/last-version/i then reject_dict(200)
-# 开屏及营销广告
-request if ${url} ~= /^https?:\/\/appapi\.51job(app)?\.com\/api\/market\/(?>adtrace|get_launch|get_prompt)/i then reject(404)
-# 顶部弹窗
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/guide\/home-page-top/i then reject(404)
-# 首页右上角浮窗及右边浮标
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/user-task\/user\/task\/init/i then reject(404)
-# 底栏中央活动标
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/index\/notice-infos/i then reject_dict(200)
-# 弹窗广告
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/launch-hub\/open\/noauth\/popUp/i then reject(404)
-# 推荐流信息广告
-request if ${url} ~= /^https?:\/\/cupid\.51job(app)?\.com\/open\/index\/recommend-infos/i then reject(404)
-
-# > 亲宝宝
-# hostname = api.qbb6.com
-request if ${url} ~= /^https?:\/\/api\.qbb6\.com\/ad\//i then reject(404)
-
-# > 穷游
-# hostname = open.qyer.com, media.qyer.com
-request if ${url} ~= /^https?:\/\/open\.qyer\.com\/qyer\/startpage\//i then reject(200)
-request if ${url} ~= /^https?:\/\/open\.qyer\.com\/qyer\/config\/get/i then reject(404)
-request if ${url} ~= /^https?:\/\/media\.qyer\.com\/ad\//i then reject(404)
-
-# > 球迷报
-# hostname = a.qiumibao.com
-request if ${url} ~= /^https?:\/\/a\.qiumibao\.com\/activities\/config\.php/i then reject(404)
-request if ${url} ~= /^https?:\/\/a\.qiumibao\.com\/ios\/config\/\?version_code=/i then reject(404)
-
-# > 去哪儿
-# hostname = qde.qunar.com, homefront.qunar.com, client.qunar.com
-request if ${url} ~= /^https?:\/\/qde\.qunar\.com\/preload/i then reject(200)
-# 开屏广告
-request if ${url} ~= /^https?:\/\/homefront\.qunar\.com\/front\/splash\/ad/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd/i then reject(404)
-
-# > 全家便利店
-# hostname = fmapp.chinafamilymart.com.cn
-request if ${url} ~= /^https?:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/biz\/base\/appversion\/latest/i then reject(404)
-
-# > 全民K歌
-# hostname = y.gtimg.cn
-request if ${url} ~= /^https?:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/.+?\d{3,4}x\d{4}/i then reject(200)
-
-# > 全能浏览器
-# hostname = mi.gdt.qq.com
-# 感谢【梭哈 All in】分享
-request if ${url} ~= /^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\?posid=/i then reject_dict(200)
-
-# > 全球购骑士卡
-# hostname = facade-api.black-unique.com
-# 开屏广告 感谢【Kook】分享
-request if ${url} ~= /^https?:\/\/facade-api\.black-unique\.com\/app\/v1\/startScreen\?cityId=102923&channelId=0&width=1170&height=2532/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/facade-api\.black-unique\.com\/app\/v1\/startScreen\?.*/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/facade-api\.black-unique\.com\/advertise\/v1\/get\?cityId=102923&positions=mine_popup/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/facade-api\.black-unique\.com\/advertise\/v1\/get\?.*/i then reject_dict(200)
-
-# > QQ浏览器
-# hostname = us.l.qq.com
-request if ${url} ~= /^https?:\/\/us\.l\.qq\.com\/exapp\?spsa=\d/i then reject(404)
-
-# > QQ钱包
-# hostname = m.qianbao.qq.com
-request if ${url} ~= /^https?:\/\/m\.qianbao\.qq\.com\/pages\/walletHome\?invisible/i then reject(404)
 
 # > QQ音乐
 # hostname = us.l.qq.com, y.gtimg.cn, music.y.qq.com
@@ -2762,35 +1504,6 @@ request if ${url} ~= /^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0
 request if ${url} ~= /^https:\/\/music\.y\.qq\.com\/maproxy\/getPbCompressAd/i then reject(404)
 
 
-# >>>>>>>>>>>>>>> ✅ R ✅ <<<<<<<<<<<<<<
-
-# > 人民日报
-# hostname = app.peopleapp.com, stat.peopleapp.com, adstatic.peopleapp.com
-request if ${url} ~= /^https?:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/(adv|getAdvertImage)/i then reject(404)
-request if ${url} ~= /^https?:\/\/stat\.peopleapp\.com\//i then reject(404)
-request if ${url} ~= /^https?:\/\/adstatic\.peopleapp\.com\/upload\/AppLoad\/.*.(jpg|png)/i then reject(200)
-
-# > 人人视频
-# hostname = api.rr.tv
-# RRTV_屏蔽軟件更新
-request if ${url} ~= /^https?:\/\/api\.rr\.tv\/.*?Version/i then reject(404)
-# RRTV_屏蔽限時彈窗
-request if ${url} ~= /https:\/\/api.rr.tv\/storage\/business\/rootName\/app\/homePage\?dataType=JSON/i then reject_dict(200)
-
-# > 日产智联
-# hostname = oneapph5.dongfeng-nissan.com.cn
-# 开屏广告
-request if ${url} ~= /^https?:\/\/oneapph5\.dongfeng-nissan\.com\.cn\/mb-gw\/vmsp-discover\/rest\/business-service\/v1\/advert\/advertinfo/i then reject_dict(200)
-
-# > 日日煮
-# hostname = cms.daydaycook.com.cn, api.daydaycook.com.cn
-request if ${url} ~= /^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\//i then reject(404)
-request if ${url} ~= /^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\//i then reject(404)
-
-# > 日淘任意门
-# hostname = app.meruki.cn
-# 开屏广告 感谢【Ava阿檬】分享
-request if ${url} ~= /^https?:\/\/app\.meruki\.cn\/\?n=Sig\.Front\.AppFront\.GetOpenAdDoorzo/i then reject_dict(200)
 
 # > 瑞幸咖啡
 # hostname = capi.lkcoffee.com, ecapi.lkcoffee.com, m.lkcoffee.com, img0*.luckincoffeecdn.com
@@ -2800,18 +1513,6 @@ response if ${url} ~= /^https?:\/\/m\.lkcoffee\.com\/ecapi\/resource\/m\/member\
 response if ${url} ~= /^https?:\/\/m\.lkcoffee\.com\/capi\/resource\/m\/growUp\/main/i then response.body.replace(/"popTitle":".+?"/, "\"popTitle\":\"\"")
 request if ${url} ~= /^https?:\/\/img0[1-9]{1}\.luckincoffeecdn\.com\/group\d\/M00\/[A-Z0-9]{2}\/[A-Z0-9]{2}\/[a-zA-Z0-9]{29}\.(jpg|jpeg)_\.webp/i then reject(200)
 
-# > RARBG
-# hostname = dyncdn.me
-# https://rarbgmirror.org/torrents.php
-request if ${url} ~= /^https?:\/\/dyncdn\.me\/static\/\d{0,2}\/js\/expla\d{0,4}\.js$/i then reject(200)
-response if ${url} ~= /^https?:\/\/dyncdn\.me\/static\/\d{0,2}\/js\/showads\.js$/i then response.body.replace(/true/, "false")
-
-
-# >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
-
-# > 三联中读
-# hostname = apis.lifeweek.com.cn
-request if ${url} ~= /https:\/\/apis.lifeweek.com.cn\/api\/baseConfig\/getIosNewConfig/i then reject(404)
 
 # > 山姆会员商店
 # hostname = api-sams.walmartmobile.cn
@@ -2824,196 +1525,14 @@ request if ${url} ~= /^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/c
 # 屏蔽更新
 request if ${url} ~= /^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/configuration\/portal\/beUpdate/i then reject_dict(200)
 
-# > 闪动校园
-# hostname = api.huachenjie.com, open.e.kuaishou.cn, ad.shunchangzhixing.com, zlsdk.1rtb.net
-# 感谢【𝔐𝔞𝔨𝔞𝔟𝔞 𝔨𝔞】分享
-# 去除ai视频
-request if ${url} ~= /^https:\/\/api\.huachenjie\.com\/run-front\/ai\/getAICategory/i then reject_dict(200)
-# 去除顶部横幅
-request if ${url} ~= /^https:\/\/api\.huachenjie\.com\/run-front\/home\/sports\/getPopup/i then reject_dict(200)
-# 去除首页广告
-request if ${url} ~= /^https:\/\/api\.huachenjie\.com\/run-front\/ad/i then reject_dict(200)
-# 去除“我”页面下方福袋
-request if ${url} ~= /^http:\/\/ad\.shunchangzhixing\.com\/getAd/i then reject_dict(200)
-# 去除开屏广告
-request if ${url} ~= /^https:\/\/open\.e\.kuaishou\.cn\/rest\/e\/v3\/open/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/zlsdk\.1rtb\.net\/sdk\/req_ad\?sdk_version=\d+\.\d+\.\d+\.\d+&device_os=iOS&accept_ad_type=\d+&app_id=\d+&pid=\d+&sdk_version_code=\d+/i then reject_dict(200)
 
-# > 闪现一下
-# hostname = api.gameplus.qq.com
-request if ${url} ~= /^https?:\/\/api\.gameplus\.qq\.com\/community\.OnloadSrv\/GetPreloadScreenInfo/i then reject(200)
-
-# > 上汽大众
-# hostname = api.mos.csvw.com
-# 已无法MITM
-#^https?:\/\/api\.mos\.csvw\.com\/mos\/operation\/home\/api\/v\d\/app\/brand\/queryDataForOperation reject-200
-
-# > 少数派
-# hostname = ios.sspai.com
-request if ${url} ~= /https:\/\/ios.sspai.com\/api\/v3\/recommend\/page\/get\?ad.*ios_home_modal/i then reject(404)
 
 # > 深圳通
 # hostname = ecard.shenzhentong.com
 request if ${url} ~= /^https?:\/\/ecard\.shenzhentong\.com\/wxweb\/bwxppub2\/QryAdvertList\.do/i then reject(200)
 
-# > 什么值得买
-# hostname = homepage-api.smzdm.com, haojia-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, qianbao.smzdm.com, s-api.smzdm.com, haojia.m.smzdm.com
-request if ${url} ~= /^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul\?/i then reject_dict(200)
 
-# > 神马
-# hostname = editor.sm.cn
-request if ${url} ~= /^https?:\/\/editor\.sm\.cn\/launch_picture/i then reject(404)
 
-# > 神舟汽车
-# hostname = img01.10101111cdn.com
-request if ${url} ~= /^https?:\/\/img01\.10101111cdn\.com\/adpos\/share\//i then reject_img(200)
-
-# > 省省回头车
-# hostname = www.ymm56.com
-# 开屏广告 需要清理缓存
-request if ${url} ~= /^https:\/\/www\.ymm56\.com\/short-distance-match-app\/openAppAd/i then reject_dict(200)
-
-# > 盛趣游戏
-# hostname = daoyu.sdo.com
-request if ${url} ~= /^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd/i then reject(404)
-
-# > 识货
-# hostname = sh-gateway.shihuo.cn, static.shihuocdn.cn
-# 开屏广告
-request if ${url} ~= /^https?:\/\/sh-gateway\.shihuo\.cn\/v\d\/services\/sh-adapi\/home\/(screen|ad)/i then reject(404)
-request if ${url} ~= /^https?:\/\/static\.shihuocdn\.cn\/admin\/imgs\/202[0-9]{5}\/[a-z0-9]{32}_513x777\.png/i then reject(200)
-request if ${url} ~= /^https?:\/\/static\.shihuocdn\.cn\/admin\/imgs\/202[0-9]{5}\/[a-z0-9]{32}_750x1624\.png/i then reject(200)
-
-# > 收钱吧
-# hostname = api.pinduoduo.com
-# 买单小程序去广告
-# ^https?:\/\/api\.pinduoduo\.com\/api\/ktt_gateway\/activity\/feeds\/personal_home_page\/ reject
-
-# > 首旅如家
-# hostname = app.homeinns.com
-request if ${url} ~= /^https?:\/\/app\.homeinns\.com\/api\/landing/i then reject(404)
-
-# > 首汽约车
-# hostname = gw-passenger.01zhuanche.com, img.yun.01zhuanche
-request if ${url} ~= /^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs/i then reject(200)
-request if ${url} ~= /^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs/i then reject(404)
-request if ${url} ~= /^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passengerController\/notk\/passenger\/recommendADs/i then reject(404)
-request if ${url} ~= /^https?:\/\/img\.yun\.01zhuanche\.com\/statics\/app\/advertisement\/.+?-750-1334/i then reject_img(200)
-
-# > 书旗小说
-# hostname = ut2.shuqistat.com, dsp.toutiao.com, sf3-be-pack.pglstatp-toutiao.com, api-access.pangolin-sdk-toutiao.com, sq.sljkj.com, ocean.shuqireader.com, img-tailor.11222.cn, message.shuqireader.com, feedback.uc.cn, *.shuqireader.com, 101.91.69.26
-request if ${url} ~= /^https?:\/\/ut2\.shuqistat\.com\/.+\.gif/i then reject(404)
-request if ${url} ~= /^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\//i then reject(404)
-request if ${url} ~= /^https?:\/\/sf3-be-pack\.pglstatp-toutiao\.com\/img\/ad\.union\.api/i then reject(404)
-request if ${url} ~= /^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/sq\.sljkj\.com\/api\/sdk\/ads2/i then reject(404)
-request if ${url} ~= /^https?:\/\/ocean\.shuqireader\.com\/api\/ad\/adserver\/.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/ad.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/.+\.pglstatp-toutiao\.com/i then reject(404)
-request if ${url} ~= /^https?:\/\/img-tailor\.11222\.cn\/pm\/app\/.+\.gif/i then reject(404)
-request if ${url} ~= /^https?:\/\/img-tailor\.11222\.cn\/cms\/upload\/img\/.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/message\.shuqireader\.com\/message\/.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/101\.91\.69\.26:8080\/.+/i then reject(404)
-request if ${url} ~= /^https?:\/\/feedback\.uc\.cn\/feedback\/api\/get_unread_status/i then reject(404)
-request if ${url} ~= /^https?:\/\/.+\.shuqireader\.com\/sapi\/.+/i then reject(404)
-
-# > 顺丰快递
-# hostname = ccsp-egmas.sf-express.com, ucmp.sf-express.com
-# APP净化 感谢【怎么肥事】分享
-request if ${url} ~= /^https?:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryInfoFlow/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/bms\/queryRecommend/i then reject_dict(200)
-
-# > 顺丰快递小程序
-# hostname = mcs-mimp-web.sf-express.com, ucmp.sf-express.com
-request if ${url} ~= /^https?:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberManage\/memberEquity\/queryRecommendEquity/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberActLengthy\/fullGiveActivityService\/fullGiveInfo/i then reject_dict(200)
-
-# > 顺丰优选
-# hostname = mapi.sfbest.com
-request if ${url} ~= /^https?:\/\/mapi\.sfbest\.com\/brokerservice-server\/cms\/getPositionById.*/i then reject(404)
-
-# > 四川航空
-# hostname = mapi.sichuanair.com
-# ^https?:\/\/mapi\.sichuanair\.com\/zt\/tribeport\/encrypt_translate_key reject-200
-
-# > 四季線上影視
-# hostname = service.4gtv.tv
-request if ${url} ~= /^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(?>GetAD|ADLog)/i then reject(200)
-
-# > 搜电充电
-# hostname = wxs-weixin.sd.zhumanggroup.com
-# 微信小程序
-request if ${url} ~= /^https?:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad/i then reject_dict(200)
-
-# > 搜狗输入法
-# hostname = business-cdn.shouji.sogou.com, ios.sogou.com, android.sogou.com, h5api.sginput.qq.com
-#^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg reject-200
-# 开屏广告
-request if ${url} ~= /^https?:\/\/(ios|android)\.sogou\.com\/[^\/]+\/sogou_input_[^\/]+\/[^\/]+\/index\.html/i then reject(404)
-# 屏蔽游戏中心
-request if ${url} ~= /^https?:\/\/h5api\.sginput\.qq\.com\/v1\/gcenter\/ios\/homepage/i then reject_dict(200)
-
-# > 搜狐
-# hostname = *.souhu.com
-request if ${url} ~= /^https?:\/\/api\.k\.sohu\.com\/api\/news\/adsense/i then reject(200)
-request if ${url} ~= /^https?:\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\//i then reject(200)
-request if ${url} ~= /^https?:\/\/s1\.api\.tv\.itc\.cn\/v4\/mobile\/control\/switch\.json/i then reject(200)
-request if ${url} ~= /^https?:\/\/(api|api-bk\d+)\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap/i then reject(404)
-request if ${url} ~= /^https?:\/\/agn\.aty\.sohu\.com\/m?/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/api\.k\.sohu\.com\/api\/channel\/ad\//i then reject_img(200)
-request if ${url} ~= /^https?:\/\/hui\.sohu\.com\/predownload2\/?/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/m\.aty\.sohu\.com\/openload?/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/mmg\.aty\.sohu\.com\/mqs?/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/mmg\.aty\.sohu\.com\/pvlog?/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/photocdn\.sohu\.com\/tvmobilemvms/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/pic\.k\.sohu\.com\/img\d\/wb\/tj\//i then reject(404)
-request if ${url} ~= /^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=/i then reject_img(200)
-
-# > 苏打校园APP
-# hostname = api.sodalife.xyz
-request if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ABOTTOM/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ACENTER/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AMINE%3ABOTTOM/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AREWARDS%3ACENTER/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.sodalife\.xyz\/v1\/goods/i then reject_dict(200)
-
-# > 苏宁易购
-# hostname = mpcs.suning.com, image.suning.com, luckman.suning.com
-request if ${url} ~= /^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo/i then reject(404)
-request if ${url} ~= /^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\//i then reject(200)
-# 新人专享弹窗
-request if ${url} ~= /^https?:\/\/luckman\.suning\.com\/luck-web\/policy\/v\d\/msf\/index\.do/i then reject(200)
-
-# > 苏周到
-# hostname = szdmobile.suzhou.gov.cn
-# 更新提示 感谢【alist.choc.ga】分享
-request if ${url} ~= /^https?:\/\/szdmobile\.suzhou\.gov\.cn\/thirdapp-center\/appUpdate\/update/i then reject_dict(200)
-
-# > 苏e行
-# hostname = ad.shunchangzhixing.com, api.bwton.com
-# 需卸载重装，有缓存
-request if ${url} ~= /^https?:\/\/ad\.shunchangzhixing\.com\/getAd/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.bwton\.com\/bff\/app\/h5\/v1\/station\/goods/i then reject_dict(200)
-# 开屏广告 感谢【alist.choc.ga】分享
-request if ${url} ~= /^https?:\/\/api\.bwton\.com\/bas\/ad/i then reject(200)
-# 软件内推广广告 感谢【为什么要看头像呢】分享
-request if ${url} ~= /^https?:\/\/api\.bwton\.com\/bff\/app\/index\/goods/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.bwton\.com\/bff\/app\/index\/recommend/i then reject_dict(200)
-
-# > Soul
-# hostname = 47.110.187.87, ssp.soulapp.cn, chat-live.soulapp.cn, api-chat.soulapp.cn, api-account.soulapp.cn, api-global.soulapp.me, api-a.soulapp.cn, api-pay.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, api-user.soulapp.cn
-# 信息流，帖子详情页等各种广告
-request if ${url} ~= /^https?:\/\/ssp\.soulapp\.cn\/api\/q/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/ssp\.soulapp\.cn\/api\/ad\/config/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2/i then reject(200)
-request if ${url} ~= /^https?:\/\/api-chat\.soulapp\.cn\/chat\/entrance\/first/i then reject_dict(200)
-# 国际版Soul去广告
-request if ${url} ~= /^https?:\/\/api-global\.soulapp\.me\/app\/open\/get/i then reject(404)
 
 # > Spotify
 # hostname = *-spclient.spotify.com, spclient.wg.spotify.com
@@ -3021,24 +1540,6 @@ request if ${url} ~= /^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::
 request if ${url} ~= /^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/artistview\/v1\/artist\/(.*)&platform=iphone/i as urlMatch then url.replace("https://spclient.wg.spotify.com/artistview/v1/artist/${urlMatch.1}&platform=ipad")
 request if ${url} ~= /^https:\/\/gae2-spclient\.spotify\.com:443\/ad/i then reject(404)
 
-
-# >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
-
-# > 台铃智能
-# hostname = www.tailgdd.com
-# 开屏广告
-response if ${url} ~= /^https:\/\/www\.tailgdd\.com\/v8\/smart\/app\/config\/get$/i then response.json.replace("data", "{}")
-
-# > 太平洋电脑
-# hostname = mrobot.pconline.com.cn, mrobot.pcauto.com.cn, agent-count.pconline.com.cn
-request if ${url} ~= /^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\//i then reject(200)
-request if ${url} ~= /^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\//i then reject(404)
-request if ${url} ~= /^https?:\/\/mrobot\.(pcauto|pconline)\.com\.cn\/v\d\/ad\dp/i then reject(404)
-request if ${url} ~= /^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/(ad|preload)/i then reject(404)
-
-# > 太平洋知科技
-# hostname = mrobot.pconline.com.cn
-request if ${url} ~= /^https?:\/\/mrobot\.pconline\.com\.cn\/s-900\/onlineinfo\/cms\/launch/i then reject(200)
 
 # > 淘宝
 # hostname = acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
@@ -3052,25 +1553,6 @@ request if ${url} ~= /^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.h
 request if ${url} ~= /^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources/i then reject_dict(200)
 request if ${url} ~= /^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get)/i then reject_dict(200)
 
-# > 淘票票
-# hostname = acs.m.taobao.com
-# 开屏广告
-request if ${url} ~= /^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.(queryadvertise|queryloadingbanner)\//i then reject(404)
-
-# > 淘淘阅读
-# hostname = bid.adview.cn
-# 感谢【Baby】分享
-request if ${url} ~= /^https?:\/\/bid\.adview\.cn\/agent\/getAd/i then reject(404)
-
-# > 腾讯乘车码
-# hostname = ccmsupport-sz.tenpay.com
-# 微信小程序
-# 感谢【jinlvei】分享
-request if ${url} ~= /^https?:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi/i then reject(404)
-
-# > 腾讯地图
-# hostname = 4gimg.map.qq.com
-request if ${url} ~= /^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\//i then reject(200)
 
 # > 腾讯广告
 # hostname = btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, mi.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, vv.video.qq.com, qt.qq.com, 3gimg.qq.com, y.gtimg.cn, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com
@@ -3103,10 +1585,6 @@ request if ${url} ~= /^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\//i then reject
 # hostname = otheve.beacon.qq.com
 # ^https?://otheve.beacon.qq.com\/analytics\/upload\?sid=.* reject
 
-# > 腾讯体育
-# hostname = news.ssp.qq.com, sports3.gtimg.com
-request if ${url} ~= /^https?:\/\/news\.ssp\.qq\.com\/app/i then reject(404)
-request if ${url} ~= /^https?:\/\/sports3\.gtimg\.com\/community\/20cf93884470434eaf38b2e77ab7796a\.png/i then reject(404)
 
 # > 腾讯新闻
 # hostname = r.inews.qq.com, news.ssp.qq.com
@@ -3124,77 +1602,6 @@ request if ${url} ~= /^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_i
 # 如果想拦截1234567890-1234?wx类的长连接就加长规则,不加结尾符,只要前面的匹配了都会拦截。
 request if ${url} ~= /^https?:\/\/static\.gameplus\.qq\.com\/img\/\d{10}-\d{4}$/i then reject(404)
 
-# > 天府市民云
-# hostname = tfsmy.chengdu.gov.cn, tft-app.cdtft.cn
-# 注意：生活圈,社区打不开 需要的自己添加主机名
-request if ${url} ~= /^https?:\/\/tfsmy\.chengdu\.gov\.cn\/api\/v5\/core\/version/i then reject(200)
-response if ${url} ~= /^https?:\/\/tft-app\.cdtft\.cn\/gateway-customer\/tftapp\/tft-ams\/api\/appAd/i then response.body.replace(/officialAdvertResultVo/, "fmz200")
-
-# > 天府手机银行
-# hostname = cgbank.oss-cn-shenzhen.aliyuncs.com
-request if ${url} ~= /^https?:\/\/cgbank\.oss-cn-shenzhen\.aliyuncs\.com\/visual\/advertisingImg\/.+.jpg/i then reject(200)
-
-# > 天府通
-# hostname = ams-cdn.cdtft.cn
-# 需卸载重装，因为设置里没有清楚缓存，推荐搭配旧版5.2.0使用 感谢【Leo】分享
-request if ${url} ~= /^https?:\/\/ams-cdn\.cdtft\.cn\/prod\/tft-ams\//i then reject_dict(200)
-
-# > 天府银行小程序
-# hostname = chl.tf.cn, wechat.tf.cn
-# 缴费弹窗广告
-response if ${url} ~= /^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/order\/queryOrderInfo/ then response.body.replace(/imgUrl/, "fmz200")
-request if ${url} ~= /^https?:\/\/chl\.tf\.cn\/channelmg\/sys\/socso\/socsonew\/queryIsRealNameAdertInfo/i then reject_dict(200)
-# 首页弹窗广告
-request if ${url} ~= /^https?:\/\/wechat\.tf\.cn\/mini-financial\/model\/queryPopup/i then reject_dict(200)
-
-# > 天猫精灵
-# hostname = ossgw.alicdn.com, zconfig.alibabausercontent.com
-request if ${url} ~= /^https?:\/\/ossgw.alicdn.com\/creatives-assets\/image\//i then reject(200)
-# 这一条规则会影响淘宝正常运行，需要增加headers判断 user-agent: %E6%B7%98%E5%AE%9D/40491997
-#^https?:\/\/zconfig\.alibabausercontent\.com\/zconfig reject
-
-# > 天猫养车
-# hostname = api.ncarzone.com
-# 中间横幅广告
-request if ${url} ~= /^https?:\/\/api\.ncarzone\.com\/superapi\/canary\/appHomeFacade\/getNewUserPlateActivity/i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.ncarzone\.com\/superapi\/canary\/bannerFacade\/app\/list/i then reject(200)
-# 右下角悬浮广告
-request if ${url} ~= /^https?:\/\/api\.ncarzone\.com\/superapi\/canary\/popupDialogFacade\/popupDialogList/i then reject(200)
-
-# > 天山云TV
-# hostname = www.tsytv.com.cn
-request if ${url} ~= /^https?:\/\/www\.tsytv\.com\.cn\/api\/app\/ios\/ads/i then reject_img(200)
-
-# > 天天基金
-# hostname = j5.dfcfw.com, appactive.1234567.com.cn
-request if ${url} ~= /^https?:\/\/j5\.dfcfw\.com\/WG\/conf\/202[0-9]{5}\/.*.(jpg|png)/i then reject(200)
-request if ${url} ~= /^https?:\/\/j5\.dfcfw\.com\/WG\/appconf\/202[0-9]{5}\/.*.(jpg|png)/i then reject(200)
-request if ${url} ~= /^https?:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg/i then reject(404)
-
-# > 天星金融
-# hostname = t1.market.xiaomi.com
-request if ${url} ~= /^https?:\/\/t1\.market\.xiaomi\.com\/thumbnail\/webp\/w1170q100\//i then reject(404)
-
-# > 天翼云盘
-# hostname = api.cloud.189.cn
-# 感谢【All in 梭哈】分享
-request if ${url} ~= /^https?:\/\/api\.cloud\.189\.cn\/guns\/(img\/recommendedPosition|getOpenscreenBanners)/i then reject_dict(200)
-
-# > 同程旅行
-# hostname = *.ly.com, *.17usoft.com, *.17u.cn, mobilehotelapi.elong.com, quic-tcmapi.elong.com
-# 开屏广告
-request if ${url} ~= /^https?:\/\/wx\.17u\.cn\/xcxhomeapi\/((aggregator\/index)|(home\/(screen|banner|converge)))$/i then reject(404)
-request if ${url} ~= /^https?:\/\/wx\.17u\.cn\/crapi\/query\/getAdImgUrlByCode/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/tcmobileapi\.17usoft\.com\/appindexnew\/index\/openscreen/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/tcmobileapi\.17usoft\.com\/appindexnew\/index\/getindexlayoutcelllist/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/tcmobileapi\.17usoft\.com\/appindexnew\/index\/gethotrecommend/i then reject_dict(200)
-# 景点界面轮播图和右下角悬浮窗
-request if ${url} ~= /^https:\/\/mobileapi\.ly\.com\/wlfrontend\/app\/scenicMain/i then reject_dict(200)
-# 租车界面 广告
-request if ${url} ~= /^https:\/\/wx\.17u\.cn\/crapi\/query\/ad/i then reject_dict(200)
-# 酒店界面广告
-request if ${url} ~= /^https:\/\/mobilehotelapi\.elong\.com\/appHotel\/adx\/advert\/getAdvert/i then reject_dict(200)
-
 # > 同花顺
 # hostname = adm.10jqka.com.cn, iphone.ac.qq.com, stat.10jqka.com.cn
 request if ${url} ~= /^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend/i then reject(200)
@@ -3202,203 +1609,12 @@ request if ${url} ~= /^https?:\/\/iphone\.ac\.qq\.com\/.*\/Support\/(getSystemCo
 # 同花顺至尊版 感谢【梭哈 All in】分享
 request if ${url} ~= /^https?:\/\/stat\.10jqka\.com\.cn\/q\?ld=mobile&id=ad/i then reject_dict(200)
 
-# > 途虎养车
-# hostname = mkt-gateway.tuhu.cn, cl-gateway.tuhu.cn, gateway.tuhu.cn
-# 包含途虎小程序和App净化
-request if ${url} ~= /^https?:\/\/(mkt-)?gateway\.tuhu\.cn(\/mkt)?\/mkt-cms\/circle\/recommend\//i then reject(404)
-request if ${url} ~= /^https?:\/\/(mkt-)?gateway\.tuhu\.cn(\/mkt)?\/[a-z-]+\/recommend/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/(mkt-)?gateway\.tuhu\.cn(\/mkt)?\/mkt-scene-marketing-service\/api\/scene\/queryScheme/i then reject(404)
-request if ${url} ~= /^https?:\/\/(mkt-)?gateway\.tuhu\.cn(\/mkt)?\/mkt-push-message-box\/banner\/cms\/getIndexBanner/i then reject(404)
-request if ${url} ~= /^https?:\/\/(mkt-)?gateway\.tuhu\.cn(\/mkt)?\/mlp-product-search-api\/search\/helper\/defaultAndHotWord/i then reject(404)
-request if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/ext-website-cl-beauty-api\/beautyIndex\/getBeautyIndex/i then reject(404)
-request if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/ext-website-cl-beauty-api\/channelPage\/v\d\/channelPageCouponPromptComponent/i then reject(404)
-request if ${url} ~= /^https?:\/\/(cl-)?gateway\.tuhu\.cn(\/cl)?\/cl-common-api\/api\/personalCenter\/getAutoSuperConfig/i then reject(404)
 
-# > 途家民宿
-# hostname = client.tujia.com
-# 需要卸载重装
-request if ${url} ~= /^https?:\/\/client\.tujia\.com\/bnbapp-node/i then reject_dict(200)
-response if ${url} ~= /^https?:\/\/client\.tujia\.com\/bnbapp-node\/app\/portal\/getportalconfig\/bnb\/v2/i then response.body.replace(/"banners":\[.+\],/, "\"banners\":[],")
-request if ${url} ~= /^https?:\/\/client\.tujia\.com\/bnbapp-node\/app\/(promotion\/popup\/getpopupups\/bnb|portal\/getStartPictureAdvertising)/i then reject(404)
-
-# > 途牛
-# hostname = m.tuniu.com
-request if ${url} ~= /^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\//i then reject(200)
-
-# > 推栏
-# hostname = m.pvp.xoyo.com
-# 去开屏广告 需要重装
-request if ${url} ~= /^https?:\/\/m\.pvp\.xoyo\.com\/conf\/server-mapping/i then reject_dict(200)
-
-# > 迅雷
-# hostname = images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com
-request if ${url} ~= /^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\//i then reject(200)
-request if ${url} ~= /^https?:\/\/api-shoulei-ssl\.xunlei\.com\/flowhub\/v\d\/slots:batchGet/i then reject(200)
-
-# > Talkatone
-# hostname = alt-r.my.com, imgx.jampp.com
-request if ${url} ~= /^https?:\/\/alt-r\.my\.com\/mobile/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/imgx\.jampp\.com\/imgsrv\/tn/i then reject_img(200)
-
-# > TapTap
-# hostname = api.taptapdada.com
-# 开屏广告 感谢【TEXAS】分享
-request if ${url} ~= /^https?:\/\/api\.taptapdada\.com\/startup-logo\/v\d\/combo\?/i then reject_dict(200)
-
-# > Top Widgets
-# hostname = top-widgets-api.xiaozujian.com
-request if ${url} ~= /^https?:\/\/top-widgets-api\.xiaozujian\.com\/api\/ad\/config/i then reject(404)
-
-# > TruthSocial
-# hostname = truthsocial.com
-request if ${url} ~= /^https?:\/\/truthsocial\.com\/api\/v\d\/truth\/ads/i then reject(404)
-
-# > TT语音
-# hostname = ga-album-cdnqn.52tt.com
-# 开屏广告 个别图片误杀 如开启可自行添加主机名
-request if ${url} ~= /^https?:\/\/ga-album-cdnqn\.52tt\.com\/prod-yunying\/.+.jpg/i then reject_dict(200)
-
-# > TubeMax
-# hostname = *.i18n-pglstatp.com
-# 感谢【可莉】分享
-request if ${url} ~= /^https?:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg/i then reject(404)
-
-
-# >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
-
-# > U净
-# hostname = api-marketing.zhinengxiyifang.cn, adsoss.zhinengxiyifang.cn, ads.zhinengxiyifang.cn
-request if ${url} ~= /^https?:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid/i then reject(404)
-request if ${url} ~= /^https?:\/\/adsoss\.zhinengxiyifang\.cn\/ads/i then reject(404)
-request if ${url} ~= /^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/*/i then reject(200)
-
-# > udn news
-# hostname = pubads.g.doubleclick.net, pagead2.googleadservices.com
-request if ${url} ~= /^https?:\/\/pubads.g.doubleclick.net\/gampad\/ads/i then reject(404)
-request if ${url} ~= /^https?:\/\/pagead2.googleadservices.com\/pagead\/adview/i then reject(404)
-
-
-# >>>>>>>>>>>>>>> ✅ V ✅ <<<<<<<<<<<<<<
-
-# > Vista看天下
-# hostname = open3.vistastory.com
-request if ${url} ~= /^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde\/loading_ad/i then reject(200)
-
-
-# >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
-
-# > 本来生活
-# hostname = img0*.benlailife.com
-request if ${url} ~= /^https?:\/\/img0[1-9]{1}\.benlailife\.com\/AppHomePageImage\/upload\/files\/.*.jpg/i then reject(200)
-
-# > 稿定设计
-# hostname = qiye.gaoding.com
-request if ${url} ~= /^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\//i then reject_dict(200)
-
-# > 完美世界电竞
-# hostname = api.wmpvp.com
-# 开屏广告
-request if ${url} ~= /^https?:\/\/api\.wmpvp\.com\/api\/v\d\/config\/promote/i then reject(404)
-
-# > 万词王
-# hostname = wanciwangdata.oss-cn-beijing.aliyuncs.com, recite.perfectlingo.com
-# 感谢【sliverkiss】分享
-# 移除开屏
-request if ${url} ~= /^https?:\/\/wanciwangdata\.oss-cn-beijing\.aliyuncs\.com\/startup\/resource\/content.+/i then reject(404)
-# 移除banner广告
-request if ${url} ~= /^https?:\/\/recite\.perfectlingo\.com\/api\/recite\/app-act\/act-list.+/i then reject_dict(200)
-# 移除底部广告
-request if ${url} ~= /^https?:\/\/recite\.perfectlingo\.com\/api\/recite\/content-recommend\/v\d\/get-by-uid.+/i then reject_dict(200)
-# 移除悬浮广告
-request if ${url} ~= /^https?:\/\/recite\.perfectlingo\.com\/api\/recite\/floating-window\/v\d\/get-show.+/i then reject_dict(200)
-
-# > 万达电影
-# hostname = misc-api-prd-mx.wandafilm.com
-# APP开屏广告
-response if ${url} ~= /^https:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api/i then response.json.jq(".data.objects[\"OpenAPP-&-FlashAD\"] = [] | .data.objects[\"InTheaters-&-BoxAD\"] = []")
-# 小程序弹窗广告
-response if ${url} ~= /^https?:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api\?bannerInfos=%5B%7B%22cinemaI/i then response.body.replace(/"WX_index_mp-&-boxAD"/, "\"fmz200\"")
-
-# > 网上国网
-# hostname = osg-static.sgcc.com.cn, osg-service.sgcc.com.cn
-request if ${url} ~= /^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/appForceUpdate/i then reject(404)
-request if ${url} ~= /^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/appSync\/getAppForceUpgrade/i then reject(404)
-request if ${url} ~= /^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/bootpageoutter\//i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/.*\/app_api\/selectInfoByCondition/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/.*\/inner\/cache/i then reject(404)
-
-# > 网易大神
-# hostname = god.gameyw.netease.com, app-conf.ds.163.com
-# 广告下发
-request if ${url} ~= /^https:\/\/god\.gameyw\.netease\.com\/v\d\/ad/i then reject(404)
-# 我的页面 - 横幅广告、为你推荐、更多会员权益、精选活动
-request if ${url} ~= /^https:\/\/god\.gameyw\.netease\.com\/v\d\/app\/static\/conf\/getByModuleNameList$/i then reject_dict(200)
-# 底栏游戏入口
-response if ${url} ~= /^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config\?/i then response.json.delete("result.updateConfig[2].itemList[94].itemList[2]")
-
-# > 网易考拉
-# hostname = kaola-haitao.oss.kaolacdn.com, sp.kaola.com, gw.kaola.com
-request if ${url} ~= /^https?:\/\/kaola-haitao\.oss\.kaolacdn.com\/.+?_\d{3,4}_\d{4}\.jpg\?x-oss-process=image\/resize,m_mfit,w_\d{3,4},h_\d{4}\/format,webp\/quality,Q_85/i then reject(200)
-request if ${url} ~= /^https?:\/\/sp\.kaola\.com\/api\/openad/i then reject(200)
-request if ${url} ~= /^https?:\/\/gw\.kaola\.com\/gw\/dgmobile\/newOpenAd/i then reject(404)
-
-# > 网易蜗牛读书
-# hostname = easyreadfs.nosdn.127.net, p.du.163.com
-request if ${url} ~= /^https?:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\//i then reject(200)
-request if ${url} ~= /^https?:\/\/p\.du\.163\.com\/ad\//i then reject(200)
 
 # > 网易新闻
 # hostname = c.m.163.com
 request if ${url} ~= /^https?:\/\/c\.m\.163\.com\/nc\/gl\//i then reject(200)
 
-# > 网易严选
-# hostname = support.you.163.com, m.you.163.com, yanxuan.nosdn.127.net
-request if ${url} ~= /https:\/\/support.you.163.com\/appversync\/check.do/i then reject(404)
-request if ${url} ~= /^https?:\/\/m\.you\.163\.com\/activity\/popWindow/i then reject(404)
-request if ${url} ~= /^https?:\/\/yanxuan\.nosdn\.127\.net\/.*\.mp4/i then reject(404)
-
-# > 网易邮箱
-# hostname = *.music.126.net, img1.126.net, www.icourse163.org, nex.163.com, g1.163.com, client.mail.163.com, c.m.163.com, interface*.music.163.com
-request if ${url} ~= /^https?:\/\/p[^4](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/p\.c\.music\.126.net\/.*?jpg$/i then reject(404)
-request if ${url} ~= /^https?:\/\/img1.126.net\/.+dpi=\w{7,8}/i then reject(404)
-request if ${url} ~= /^https?:\/\/img1.126.net\/channel14\//i then reject(404)
-request if ${url} ~= /^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$/i then reject(404)
-request if ${url} ~= /^https?:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg$/i then reject(404)
-request if ${url} ~= /^https?:\/\/www.icourse163.org\/.*?(Advertisement)/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/nex.163.com\/q/i then reject(404)
-request if ${url} ~= /^https?:\/\/g1.163.com\/madfeedback/i then reject(404)
-request if ${url} ~= /^https?:\/\/www\.icourse163\.org\/mob\/j\/v1\/mobRecommendRPCBean\.getMaxWeightAdvertisement\.rpc/i then reject(200)
-request if ${url} ~= /^https?:\/\/interface3?\.music\.163\.com\/eapi\/(ad|abtest|sp|hot|store|mlog|search\/(specialkeyword|defaultkeyword|hot))/i then reject_img(200)
-
-# > 网易有道词典
-# hostname = dict.youdao.com, api-overmind.youdao.com, cdke.youdao.com, dictvip-business.youdao.com, dsp-impr2.youdao.com, impservice.dictapp.youdao.com, oral.youdao.com, oimage*.ydstatic.com
-# 翻译广告
-request if ${url} ~= /^https?:\/\/dict\.youdao\.com\/course\/tab\/translateTab/i then reject_dict(200)
-# 听读训练
-#^https?:\/\/dict\.youdao\.com\/homepage\/tile reject-dict
-# 首次查词弹窗
-request if ${url} ~= /^https?:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig/i then reject_dict(200)
-# 首页弹窗
-request if ${url} ~= /^https?:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup/i then reject_dict(200)
-# 搜索预想
-request if ${url} ~= /^https?:\/\/dict\.youdao\.com\/commonsearch/i then reject_dict(200)
-# 会员优惠券弹窗
-request if ${url} ~= /^https?:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo/i then reject_dict(200)
-# 首页左上角福利中心
-request if ${url} ~= /^https?:\/\/dict\.youdao\.com\/dictusertask\/system/i then reject_dict(200)
-# 会员界面横幅广告
-request if ${url} ~= /^https?:\/\/dictvip-business\.youdao\.com\/home\/ad/i then reject_dict(200)
-# 其他
-request if ${url} ~= /^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish/i then reject(404)
-request if ${url} ~= /^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/dsp-impr2\.youdao\.com\/adload/i then reject(200)
-request if ${url} ~= /^https?:\/\/impservice\.dictapp\.youdao\.com\/imp\/request/i then reject_img(200)
-request if ${url} ~= /^https?:\/\/oral\.youdao\.com\/oral\/adInfo/i then reject_img(200)
-
-# > 网易有钱
-# hostname = client.mail.163.com
-request if ${url} ~= /^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds/i then reject(200)
 
 # > 网易云音乐
 # hostname = interface.music.163.com, interface3.music.163.com, ipv4.music.163.com, interface9.music.163.com
@@ -3414,10 +1630,6 @@ request if ${url} ~= /^https?:\/\/interface\d?\.music\.163.com\/eapi\/(mlivestre
 # > 威锋
 # hostname = api.wfdata.club
 request if ${url} ~= /^https?:\/\/api\.wfdata\.club\/v\d\/yesfeng\/(infoCenterAd|yesList)/i then reject(404)
-
-# > 微店
-# hostname = thor.weidian.com
-request if ${url} ~= /^https?:\/\/thor\.weidian\.com\/ares\/home\.splash/i then reject(200)
 
 # > 微信公众号
 # hostname = mp.weixin.qq.com
@@ -3436,79 +1648,11 @@ request if ${url} ~= /^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/layo
 # 右下角悬浮窗，需手动关闭广告一次
 request if ${url} ~= /^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/coupon\/float_entrance\/get\?api_key/i then reject(200)
 
-# > 蜗牛睡眠
-# hostname = snailsleep.net
-request if ${url} ~= /^https?:\/\/snailsleep\.net\/snail\/v\d\/adTask\//i then reject(404)
-request if ${url} ~= /^https?:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\?/i then reject(404)
-
-# > 我爱卡社区管家
-# hostname = api.51credit.com
-request if ${url} ~= /^https?:\/\/api\.51credit\.com\/app\/popup\/appPopup/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.51credit\.com\/ks\/a\/list\?/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.51credit\.com\/bbs\/app\/api\/v\d\/topic\/chat/i then reject_dict(200)
-
-# > 无他相机
-# hostname = api-release.wuta-cam.com, res-release.wuta-cam.com
-request if ${url} ~= /^https?:\/\/api-release\.wuta-cam\.com\/ad_tree/i then reject(200)
-request if ${url} ~= /^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json/i then reject(404)
-
-# > 悟空遥控器
-# hostname = img.wukongtv.com
-request if ${url} ~= /^https?:\/\/img\.wukongtv\.com\/wkremote\/AD\/iOS\/.*.(jpg|png|jpeg)/i then reject(200)
-
-# > Weico(微博客户端)
-# hostname = overseas.weico.cc
-request if ${url} ~= /^https?:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads/i then reject(200)
-
-# > WiFi万能钥匙
-# hostname = cds.wifi188.com
-# 首页弹窗广告
-request if ${url} ~= /^https?:\/\/cds\.wifi188\.com\/feeds\.sec/i then reject_dict(200)
-
 # > WPS
 # hostname = ios.wps.cn, mobile-pic.cache.iciba.com
 request if ${url} ~= /^https?:\/\/ios\.wps\.cn\/ad-statistics-service/i then reject(404)
 
 
-# >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
-
-# > 米读
-# hostname = apiwz.midukanshu.com
-request if ${url} ~= /^https?:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$/i then reject(404)
-request if ${url} ~= /^https?:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$/i then reject(404)
-request if ${url} ~= /^https?:\/\/apiwz\.midukanshu\.com\/config\/getAds$/i then reject(404)
-
-# > 米游社
-# hostname = upload-bbs.mihoyo.com
-request if ${url} ~= /^https?:\/\/upload-bbs\.mihoyo\.com\/upload\/202[2-9]{1}\/[0-9]{2}\/[0-9]{2}\/[a-z0-9]{32}_[a-z0-9]{19}\.(jpg|png)$/i then reject(200)
-
-# > 厦门航空
-# hostname = mobileapi.xiamenair.com
-# 开屏广告
-request if ${url} ~= /^https:\/\/mobileapi\.xiamenair\.com\/mobile-starter/i then reject(404)
-
-# > 西窗烛
-# hostname = lchttpapi.xczim.com
-request if ${url} ~= /^https?:\/\/lchttpapi\.xczim\.com\/1\.1\/functions\/getLaunchImageForIOS/i then reject(404)
-
-# > 西施眼
-# hostname = vapp.tmuyun.com
-request if ${url} ~= /^https:\/\/vapp\.tmuyun\.com\/api\/app_start_page\/list\/new/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/vapp\.tmuyun\.com\/api\/buoy\/list/i then reject_dict(200)
-
-# > 希尔顿
-# hostname = wcprd.hilton.com.cn
-# 荣誉客会
-request if ${url} ~= /^https?:\/\/wcprd\.hilton\.com\.cn\/app-middleware\/graphql\?type=splashAd/i then reject(200)
-
-# > 希沃白板5
-# hostname = cstore-en-public-tx.seewo.com
-# 开屏广告 需要卸载重装 感谢【别怕我又不乱来】分享
-request if ${url} ~= /^https?:\/\/cstore-en-public-tx\.seewo\.com\/easinote5_public/i then reject_dict(200)
-
-# > 稀饭动漫
-# hostname = pzoap.moedot.net
-request if ${url} ~= /^https?:\/\/pzoap\.moedot\.net\/xgapp\.php\/v2\/top_notice/i then reject(404)
 
 # > 喜马拉雅
 # hostname = gslbali.ximalaya.com, search.ximalaya.com, searchwsa.ximalaya.com, mobile.ximalaya.com, mobilehera.ximalaya.com, mobwsa.ximalaya.com, m.ximalaya.com, mwsa.ximalaya.com
@@ -3554,23 +1698,6 @@ request if ${url} ~= /^https:\/\/(mobile|mobilehera|mobwsa)\.ximalaya\.com\/subs
 
 request if ${url} ~= /^https:\/\/(mobile|mobilehera|mobwsa)\.ximalaya\.com\/mobile-user\/v\d\/purchased\/recommend\//i then reject_dict(200)
 
-# > 虾米音乐
-# hostname = acs.m.taobao.com
-request if ${url} ~= /^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\//i then reject(404)
-
-# > 下厨房
-# hostname = *.pglstatp-toutiao.com, res1.hubcloud.com.cnhostname = api.xiachufang.com
-request if ${url} ~= /^https?:\/\/api\.xiachufang\.com\/v\d\/ad\//i then reject(404)
-# 首页会有一小部分图片误杀
-request if ${url} ~= /^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1}/i then reject(200)
-request if ${url} ~= /^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1}/i then reject(200)
-
-
-
-# 去开屏
-request if ${url} ~= /^http?:\/\/.*\.pglstatp-toutiao\.com/i then reject(200)
-request if ${url} ~= /^http:\/\/res1\.hubcloud\.com\.cn/i then reject(200)
-
 # > 闲鱼
 # hostname = acs.m.goofish.com, g-acs.m.goofish.com
 # 搜索页多余推荐列表
@@ -3604,51 +1731,7 @@ response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.
 # 主页关注页面圈子常访问
 response if ${url} ~= /^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.visited\/1\.0/i then response.json.jq(".data.visitedCircleList = []")
 
-# > 向日葵
-# hostname = client-api-v2.oray.com
-# ^https?:\/\/client-api-v2\.oray\.com\/materials reject-200
-# 开屏广告
-request if ${url} ~= /^https?:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP/i then reject_dict(200)
-# 首页文字广告
-request if ${url} ~= /^https?:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_DEVICE/i then reject_dict(200)
-# 发现页广告
-request if ${url} ~= /^https?:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION/i then reject_dict(200)
 
-# > 小爱音箱
-# hostname = info.mina.xiaoaisound.com, marketing-aibox.v.mitvos.com
-request if ${url} ~= /^https?:\/\/(info\.mina\.xiaoaisound|marketing-aibox\.v\.mitvos)\.com\/advertise(?!\/banner)/i then reject(404)
-request if ${url} ~= /^https?:\/\/(info\.mina\.xiaoaisound|marketing-aibox\.v\.mitvos)\.com\/payGuide\/userCenter/i then reject(404)
-request if ${url} ~= /^https?:\/\/(info\.mina\.xiaoaisound|marketing-aibox\.v\.mitvos)\.com\/popup/i then reject_dict(200)
-
-# > 小白学习打印机
-# hostname = api.xbxxhz.com
-# 开屏广告
-# 捕获试卷脚本：https://raw.githubusercontent.com/Yu9191/Script/main/shijuan.js
-request if ${url} ~= /^https?:\/\/api\.xbxxhz\.com\/big_data\/v1\/home_pages/i then reject(404)
-
-# > 小蚕霸王餐
-# hostname = zlsdk.1rtb.net, web2.realtech-inc.com, sdk.1rtb.net, gw.xiaocantech.com
-# 感谢【派大星，ZenMoFiShi，sliverkissm】分享
-# 去广告（这个域名其实已经在分流中拒绝）
-request if ${url} ~= /^https?:\/\/zlsdk\.1rtb\.net\/sdk\/req_ad/i then reject_dict(200)
-# 红包推广 因为Loon没有url-and-header这种匹配方式，此条可能会导致软件异常
-#^https:\/\/gw\.xiaocantech\.com\/rpc reject-dict
-# 首页横幅推广
-request if ${url} ~= /^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json/i then reject_dict(200)
-# 开屏广告
-request if ${url} ~= /^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad\?/i then reject_dict(200)
-# 更新弹窗
-request if ${url} ~= /^https:\/\/gw\.xiaocantech\.com\/g\/pa/i then reject_dict(200)
-
-# > 小电充电
-# hostname = smarket.dian.so, file.dian.so
-# 微信小程序
-request if ${url} ~= /^https?:\/\/smarket\.dian\.so/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/file\.dian\.so\/c\/leto/i then reject_dict(200)
-
-# > 小合拓展
-# hostname = xhtz.oss-cn-guangzhou.aliyuncs.com
-request if ${url} ~= /^https?:\/\/xhtz.oss-cn-guangzhou\.aliyuncs\.com\/home\/member\/.+\.png$/i then reject(200)
 
 # > 小红书
 # hostname = edith.xiaohongshu.com, www.xiaohongshu.com, ci.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com, edith.rnote.com, www.rnote.com, ci.rnote.com, so.rnote.com, rec.rnote.com
@@ -3663,68 +1746,7 @@ request if ${url} ~= /^https?:\/\/www\.(xiaohongshu|rnote)\.com\/api\/sns\/(v\d+
 # 评论区图片水印
 request if ${url} ~= /^https?:\/\/ci\.(xiaohongshu|rnote)\.com\/system_config\/watermark/i then reject_img(200)
 
-# > 小桔科技
-# hostname = ct.xiaojukeji.com, res.xiaojukeji.com
-request if ${url} ~= /^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds/i then reject(404)
-request if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices)/i then reject(404)
-request if ${url} ~= /^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget/i then reject(404)
 
-# > 小利生活
-# hostname = mpos-pic.helipay.com
-request if ${url} ~= /^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image/i then reject(404)
-
-# > 小芒
-# hostname = mgesq.api.mgtv.com, *.hitv.com
-# app去广告 感谢【sliverkiss】分享
-# 我的页面-猜你喜欢
-request if ${url} ~= /^https:\/\/mgesq\.api\.mgtv\.com\/v2\/goods\/guess_you_like/i then reject_dict(200)
-# 我的页面-
-request if ${url} ~= /https:\/\/mgesq.api.mgtv.com\/v2\/user\/center\/icon/i then reject_dict(200)
-# 搜索排行榜单
-request if ${url} ~= /^https:\/\/mgesq\.api\.mgtv\.com\/search\/goods\/rank/i then reject_dict(200)
-# 底部按钮、我的页面左上角
-request if ${url} ~= /^https:\/\/mgesq\.api\.mgtv\.com\/user\/center\/config/i then reject_dict(200)
-
-# > 小米打印
-# hostname = api-miprint.hannto.com, api.indeedpower.com
-# 去开屏 感谢【别怕我又不乱来】分享
-request if ${url} ~= /^https?:\/\/api-miprint\.hannto\.com\/v1\/c\/res\/app\/ad\/\?app_version/i then reject_dict(200)
-# 主页上方广告
-request if ${url} ~= /^https?:\/\/api\.indeedpower\.com\/v1\/m\/edu\/module\/homepage_banner\/\?randomStr/i then reject_dict(200)
-
-# > 小米金融
-# hostname = api.jr.mi.com
-request if ${url} ~= /^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\//i then reject(200)
-request if ${url} ~= /^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen/i then reject(200)
-
-# > 小米有品
-# hostname = shopapi.io.mi.com
-request if ${url} ~= /^https?:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig/i then reject(200)
-
-# > 小米运动
-# hostname = api-mifit*.huami.com
-request if ${url} ~= /^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\?/i then reject(200)
-
-# > 小牛
-# hostname = app-api.niu.com
-request if ${url} ~= /^https?:\/\/app-api\.niu\.com\/v\d\/advertisement\//i then reject(404)
-
-# > 小佩宠物
-# hostname = api.petkit.cn
-request if ${url} ~= /^https?:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo/i then reject_dict(200)
-
-# > 小睡眠
-# hostname = api.psy-1.com
-request if ${url} ~= /^https?:\/\/api\.psy-1\.com\/cosleep\/startup/i then reject(404)
-
-# > 小特 - 首选特斯拉中文社区
-# hostname = lcen.xiaote.net
-response if ${url} ~= /^https?:\/\/lcen\.xiaote\.net\/api\/graphql/i then response.body.replace(/screenSplashAd/, "fmz200")
-
-# > 小兔充充
-# hostname = ad.xiaotucc.com, mapi.xiaotucc.com
-# 小程序净化
-request if ${url} ~= /^https?:\/\/ad\.xiaotucc\.com\/advert/i then reject(404)
 
 # > 小象超市
 # hostname = portal-portm.meituan.com, mall.meituan.com
@@ -3735,66 +1757,6 @@ request if ${url} ~= /^https?:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash/i
 # 首页领券悬浮红包
 response if ${url} ~= /^https?:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info/i then response.body.mock("json", "{\"code\": 0}")
 
-# > 小熊拦截
-# hostname = spamblocker-api.zeekstudio.com
-# 去除更新弹窗
-request if ${url} ~= /^https:\/\/spamblocker-api\.zeekstudio\.com\/profile/i then reject_dict(200)
-request if ${url} ~= /^https:\/\/spamblocker-api\.zeekstudio\.com\/checkVersion/i then reject_dict(200)
-
-# > 小熊艺术
-# hostname = www.xiaoxiongmeishu.com
-request if ${url} ~= /^https:\/\/www\.xiaoxiongmeishu\.com\/api\/(home\/v1\/config\/appInit|s\/v1\/popup\/createCouponPopup)/i then reject(404)
-
-# > 小艺
-# hostname = api.xiaoyi.com
-request if ${url} ~= /^https?:\/\/api.xiaoyi.com\/v5\/app\/mobile\/ads/i then reject(404)
-request if ${url} ~= /^https?:\/\/api.xiaoyi.com\/v5\/app\/config\?userid=.*/i then reject(404)
-
-# > 小宇宙
-# hostname = api.xiaoyuzhoufm.com
-# 首页净化
-response if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v1\/discovery-feed\/list/i then response.json.jq(".data |= map(select(.type != \"DISCOVERY_HEADER\" and .type != \"DISCOVERY_BANNER\"))")
-#
-response if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v1\/(related-episode|operation-resource)\/list/i then response.json.jq(".data = []")
-# 移除开屏广告
-request if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/flash/i then reject_dict(200)
-# 移除单集总结和ai总结
-request if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/ai/i then reject_dict(200)
-# 移除搜索框内容
-request if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/search\/get/i then reject_dict(200)
-request if ${url} ~= /^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/category/i then reject_dict(200)
-
-# > 小Biu智家
-# hostname = shcss.suning.com
-# 开屏广告 感谢【别人别我】分享
-request if ${url} ~= /^https?:\/\/shcss\.suning\.com\/shcss-web\/api\/appImage\/queryAppImage\.do/i then reject(200)
-
-# > 晓晓优选
-# hostname = xxyx-client-api.xiaoxiaoyouxuan.com, statistic.live.126.net
-request if ${url} ~= /^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/get_big_module_bottom_ad/i then reject(404)
-request if ${url} ~= /^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/get_index_activity_list_ad/i then reject(404)
-request if ${url} ~= /^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/bottom_banner/i then reject(404)
-request if ${url} ~= /^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/new_banner\?/i then reject(404)
-# 多余模块
-# ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/vajra reject-dict
-# 弹窗广告
-request if ${url} ~= /^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/agent_ad/i then reject(404)
-# 右下角的悬浮广告
-request if ${url} ~= /^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/activity\/show/i then reject(404)
-request if ${url} ~= /^https?:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/client\/urban\/activity\/index\/data\?agentId=12/i then reject(404)
-# 禁止上报设备信息
-request if ${url} ~= /^https?:\/\/statistic\.live\.126\.net\/statics\/report\/common\/form/i then reject(404)
-
-# > 笑容加
-# hostname = myusmile.online, wemallh5.usmile.com, www.myusmile.online
-# 屏蔽更新提示
-request if ${url} ~= /^https?:\/\/myusmile\.online\/user\/version\/requestAppUpdate/i then reject_dict(200)
-# 屏蔽固件更新
-request if ${url} ~= /^https?:\/\/myusmile\.online\/user\/version\/requestFirmwareUpdate\//i then reject(404)
-# 商城页弹窗
-request if ${url} ~= /^https?:\/\/wemallh5\.usmile\.com\/api\/sp-portal\/store\/usmile\/activity\/dayCheck\?pop/i then reject_dict(200)
-# 首页弹窗
-request if ${url} ~= /^https?:\/\/www\.myusmile\.online\/user\/userTagRecord\/popup/i then reject(404)
 
 # > 携程
 # hostname = m.ctrip.com, ma-adx.ctrip.com, mbd.baidu.com
