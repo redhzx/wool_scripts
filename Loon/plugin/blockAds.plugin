@@ -658,16 +658,16 @@ DOMAIN-SUFFIX, mdc.meitustat.com, REJECT
 DOMAIN-SUFFIX, rabbit.meitustat.com, REJECT
 
 # > 美团
-DOMAIN-SUFFIX,meituan.xn, REJECT
-DOMAIN-SUFFIX,meituan.yoga, REJECT
-DOMAIN-SUFFIX,meituangov.cn, REJECT
-DOMAIN-SUFFIX,report.meituan.com, REJECT
-DOMAIN-SUFFIX,analytics.meituan.net, REJECT
-DOMAIN-SUFFIX,wmlog.meituan.com, REJECT
-DOMAIN-SUFFIX,ad.e.waimai.sankuai.com, REJECT
-DOMAIN-SUFFIX,mads.meituan.com, REJECT
-DOMAIN-SUFFIX,dreport.meituan.net, REJECT
-DOMAIN-SUFFIX,d.meituan.net, REJECT
+#DOMAIN-SUFFIX,meituan.xn, REJECT
+#DOMAIN-SUFFIX,meituan.yoga, REJECT
+#DOMAIN-SUFFIX,meituangov.cn, REJECT
+#DOMAIN-SUFFIX,report.meituan.com, REJECT
+#DOMAIN-SUFFIX,analytics.meituan.net, REJECT
+#DOMAIN-SUFFIX,wmlog.meituan.com, REJECT
+#DOMAIN-SUFFIX,ad.e.waimai.sankuai.com, REJECT
+#DOMAIN-SUFFIX,mads.meituan.com, REJECT
+#DOMAIN-SUFFIX,dreport.meituan.net, REJECT
+#DOMAIN-SUFFIX,d.meituan.net, REJECT
 
 # > 美颜相机
 # 去首页和轮播广告, REJECT
